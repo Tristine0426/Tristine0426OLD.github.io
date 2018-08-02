@@ -1,0 +1,137 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  background-color: white;
+  font-family: cabin;
+}
+
+.container {
+  background-color: white;
+    margin: 0 auto;
+  width: 80%;
+}
+/******NAVBAR******/
+.navigation, .container {
+    background-color: white;
+    border: 1px solid red;
+}
+
+.navigation {
+  background-color: white;
+  font-family: Raleway;
+  margin: 0 auto;
+  width: 80%;
+}
+
+.navigation a {
+  color: black;
+  text-decoration: none;
+}
+
+.navigation img {
+  display: inline-lock;
+  width: 10rem;
+}
+
+.navigation ul {
+  float: right;
+  font-size: 1.8rem;
+  padding: 1rem;
+}
+
+.navigation ul li {
+  display: inline-block;
+  font-family: Raleway;
+  list-style: none;
+  padding: 2rem;
+  text-transform: uppercase;
+}
+
+.navigation ul li a:hover {
+  color: #ED2F80;
+}
+
+/******HERO******/
+.intro {
+  background: linear-gradient(rgba(47, 128, 237, 0.7), rgba(237, 47, 128, 0.7)),
+  url(../images/cloud.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  overflow: hidden;
+  padding: 10rem;
+  font-size: 1.8rem;
+}
+
+.avatar {
+  background-image: url(../images/avatar.jpg);
+  border-radius: 50%;
+  display: flex;
+  height: 25rem;
+  width: 25rem;
+}
+
+.general {
+  width: 80%;
+}
+
+.whoareyou {
+  padding: 0 20rem;
+}
+
+.bold {
+  font-weight: 900;
+}
+
+h1 {
+  font-size: 3.6rem;
+}
+
+h3 {
+  font-size: 2rem;
+  padding: 2rem 0;
+}
+
+
+/******FOOTER******/
+footer {
+  background-color: #212121;
+  color: #FFFFFF;
+  font-family: Raleway;
+  margin: auto;
+  padding: 2rem;
+}
+
+.intouch {
+  margin: auto;
+  text-align: center;
+  width: 40%;
+}
+
+.intouch span {
+  display: inline-block;
+  font-size: 2rem;
+  margin: .5rem auto;
+  padding-bottom: 1rem;
+}
+
+footer ul {
+  margin-bottom: 1rem;
+  padding: .5rem;
+}
+
+footer ul li {
+  display: inline;
+  padding: 1rem;
+}
+
+.credit {
+  font-size: 1.3rem;
+}

@@ -1,53 +1,35 @@
-body {
-    padding-bottom: 5rem;
+/******FOOTER******/
+footer {
+  background-color: #212121;
+  color: #FFFFFF;
+  font-family: Raleway;
+  margin: auto;
+  padding: 2rem;
 }
 
-header {
-    background: url(../images/conquer.jpg) center/cover;
-    height: 60vh;
-    justify-content: center;
-    text-align: center;
+.intouch {
+  margin: auto;
+  text-align: center;
+  width: 40%;
 }
 
-h1 {
-    color: rgb(38,50,56);
-    font-weight: bold;
+.intouch span {
+  display: inline-block;
+  font-size: 2rem;
+  margin: .5rem auto;
+  padding-bottom: 1rem;
 }
 
-.slogan {
-    color: rgb(38,50,56);
-    opacity: 0.7;
-    font-weight: lighter;
-    font-size: 1.6rem;
+footer ul {
+  margin-bottom: 1rem;
+  padding: .5rem;
 }
 
-main {
-    max-width: 900px;
+footer ul li {
+  display: inline;
+  padding: 1rem;
 }
 
-.project-description {
-    padding-left: 0;
+.credit {
+  font-size: 1.3rem;
 }
-
-.project img {
-    widows: 100%;
-}
-
-footer.mdl-mini-footer {
-    bottom: 0;
-    padding: 0.5rem;
-    position: fixed;
-    width: 100%;
-    z-index: 1;
-}
-
-footer.mdl-mini-footer > ul {
-    margin: auto;
-    font-size: 2rem;
-}
-
- @media screen and (max-width: 1024px) {
-   header.mdl-layout__header {
-     display: flex;
-   }
- }

@@ -13,47 +13,42 @@ body {
 
 .container {
   background-color: white;
-    margin: 0 auto;
-  width: 80%;
-}
-/******NAVBAR******/
-.navigation, .container {
-    background-color: white;
-    border: 1px solid red;
-}
-
-.navigation {
-  background-color: white;
-  font-family: Raleway;
   margin: 0 auto;
   width: 80%;
 }
+/******NAVBAR******/
+nav {
+  background-color: white;
+  display: inline-block;
+  font-family: Raleway;
+  width: 100%;
+}
 
-.navigation a {
+nav a {
   color: black;
   text-decoration: none;
 }
 
-.navigation img {
-  display: inline-lock;
-  width: 10rem;
-}
-
-.navigation ul {
-  float: right;
-  font-size: 1.8rem;
+nav img {
   padding: 1rem;
+  width: 8rem;
 }
 
-.navigation ul li {
+nav ul {
+  float: right;
+}
+
+nav ul li {
   display: inline-block;
   font-family: Raleway;
+  font-size: 1.4rem;
+  font-weight: 900;
   list-style: none;
-  padding: 2rem;
+  padding: 2.2rem;
   text-transform: uppercase;
 }
 
-.navigation ul li a:hover {
+nav ul li a:hover {
   color: #ED2F80;
 }
 
@@ -105,20 +100,19 @@ footer {
   background-color: #212121;
   color: #FFFFFF;
   font-family: Raleway;
-  margin: auto;
   padding: 2rem;
+  position: absolute;
+  width: 100%;
 }
 
-.intouch {
+.footer-content {
   margin: auto;
   text-align: center;
-  width: 40%;
 }
 
-.intouch span {
+.footer-content div {
   display: inline-block;
   font-size: 2rem;
-  margin: .5rem auto;
   padding-bottom: 1rem;
 }
 
@@ -134,4 +128,63 @@ footer ul li {
 
 .credit {
   font-size: 1.3rem;
+}
+
+/****************TABLET SIZE****************/
+@media screen and (min-width: 768px) {
+  /******NAVBAR******/
+  .nav-content {
+    margin: 0 auto;
+    width: 80%;
+  }
+
+  nav ul li {
+    font-size: 1.8rem;
+  }
+
+  /******HERO******/
+  .hero {
+    border: 1px solid red;
+    padding-top: 12rem;
+  }
+
+  h1 {
+    font-size: 2.6rem;
+  }
+
+  .down-arrow {
+    margin: 10rem 0 2rem 0;
+  }
+
+  /******FOR ALL PROJECTS*****/
+  .container {
+    font-size: 2.0rem;
+    line-height: 1.4;
+    padding: 3rem .5rem;
+    text-align: center;
+  }
+
+  /******PROJECT1******/
+  .button {
+    background-color: #ED2F80;
+    border-radius: 5rem;
+    margin: 4.8rem;
+    padding: 2rem 1.6rem;
+    width: 70%;
+  }
+
+  /******FOOTER******/
+  .footer-content span {
+    display: block;
+  }
+
+}
+
+/****************DESKTOP****************/
+@media screen and (min-width: 1200px) {
+  /******FOOTER******/
+  .footer-content span {
+    display: block;
+  }
+
 }

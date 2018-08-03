@@ -18,57 +18,51 @@ body {
   width: 100%;
 }
 /******NAVBAR******/
-.navigation, .container {
-    background-color: white;
-    border: 1px solid black;
-}
-
-.navigation {
+nav {
   background-color: white;
+  display: inline-block;
   font-family: Raleway;
-  margin: 0 auto;
-  width: 80%;
+  width: 100%;
 }
 
-.navigation a {
+nav a {
   color: black;
   text-decoration: none;
 }
 
-.navigation img {
-  display: inline-lock;
-  width: 10rem;
-}
-
-.navigation ul {
-  float: right;
-  font-size: 1.8rem;
+nav img {
   padding: 1rem;
+  width: 8rem;
 }
 
-.navigation ul li {
+nav ul {
+  float: right;
+}
+
+nav ul li {
   display: inline-block;
   font-family: Raleway;
+  font-size: 1.4rem;
+  font-weight: 900;
   list-style: none;
-  padding: 2rem;
+  padding: 2.2rem;
   text-transform: uppercase;
 }
 
-.navigation ul li a:hover {
+nav ul li a:hover {
   color: #ED2F80;
 }
 
-
 /******HERO******/
 .hero {
-background: linear-gradient(rgba(	33, 212, 253, 0.6),rgba(59, 88, 252, 0.6)),
+  background: linear-gradient(rgba(	33, 212, 253, 0.6),rgba(59, 88, 252, 0.6)),
   url(../images/cloud.jpg);
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
 
 h1 {
-    font-size: 2.6rem;
+  font-size: 2.6rem;
 }
 
 /******SECTION******/
@@ -101,9 +95,20 @@ footer {
   width: 100%;
 }
 
+.footer-content {
+  margin: auto;
+  text-align: center;
+}
+
+.footer-content div {
+  display: inline-block;
+  font-size: 2rem;
+  padding-bottom: 1rem;
+}
+
 footer ul {
   margin-bottom: 1rem;
-  padding: 1rem;
+  padding: .5rem;
 }
 
 footer ul li {
@@ -113,4 +118,62 @@ footer ul li {
 
 .credit {
   font-size: 1.3rem;
+}
+/****************TABLET SIZE****************/
+@media screen and (min-width: 768px) {
+  /******NAVBAR******/
+  .nav-content {
+    margin: 0 auto;
+    width: 80%;
+  }
+
+  nav ul li {
+    font-size: 1.8rem;
+  }
+
+  /******HERO******/
+  .hero {
+    border: 1px solid red;
+    padding-top: 12rem;
+  }
+
+  h1 {
+    font-size: 2.6rem;
+  }
+
+  .down-arrow {
+    margin: 10rem 0 2rem 0;
+  }
+
+  /******FOR ALL PROJECTS*****/
+  .container {
+    font-size: 2.0rem;
+    line-height: 1.4;
+    padding: 3rem .5rem;
+    text-align: center;
+  }
+
+  /******PROJECT1******/
+  .button {
+    background-color: #ED2F80;
+    border-radius: 5rem;
+    margin: 4.8rem;
+    padding: 2rem 1.6rem;
+    width: 70%;
+  }
+
+  /******FOOTER******/
+  .footer-content span {
+    display: block;
+  }
+
+}
+
+/****************DESKTOP****************/
+@media screen and (min-width: 1200px) {
+  /******FOOTER******/
+  .footer-content span {
+    display: block;
+  }
+
 }

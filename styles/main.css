@@ -1,22 +1,122 @@
+
+/****************GENERAL PG SETUP****************/
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: cabin;
+}
+
+/******NAVBAR******/
+nav {
+  background-color: white;
+  display: inline-block;
+  font-family: Raleway;
+  width: 100%;
+}
+
+.nav-content {
+    width: 80%;
+}
+
+nav a {
+  color: black;
+  text-decoration: none;
+}
+
+nav img {
+  padding: 1rem;
+  width: 8rem;
+}
+
+nav ul {
+  float: right;
+}
+
+nav ul li {
+  display: inline-block;
+  font-family: Raleway;
+  font-size: 1.4rem;
+  font-weight: 900;
+  list-style: none;
+  padding: 2.2rem;
+  text-transform: uppercase;
+}
+
+nav ul li a:hover {
+  color: #ED2F80;
+}
+
+/******HERO******/
+.hero {
+  border: 1px solid red;
+  padding-top: 8rem;
+}
+
+.hero div {
+  display: block;
+}
+
+.bold {
+  color: #2F80ED;
+  font-weight: 900;
+}
+
+h1 {
+  font-size: 1.6rem;
+  font-family: Montserrat;
+  line-height: 1.6;
+  text-align: center;;
+}
+
+.down-arrow {
+  margin: 6rem 0 2rem 0;
+  text-align: center;
+}
+
+/******FOR ALL PROJECTS*****/
+.container {
+  background: linear-gradient(to left, #3B58FC, #546dfc);
+  color: white;
+  font-size: 1.6rem;
+  font-weight: 900;
+  line-height: 1.4;
+  padding: 3rem .5rem;
+  text-align: center;
+}
+
+/******PROJECT1******/
+.button {
+  background-color: #ED2F80;
+  border-radius: 5rem;
+  margin: 4.8rem;
+  padding: 2rem 1.6rem;
+  width: 70%;
+}
+
 /******FOOTER******/
 footer {
   background-color: #212121;
   color: #FFFFFF;
   font-family: Raleway;
-  margin: auto;
   padding: 2rem;
+  position: absolute;
+  width: 100%;
 }
 
-.intouch {
+.footer-content {
   margin: auto;
   text-align: center;
-  width: 40%;
 }
 
-.intouch span {
+.footer-content div {
   display: inline-block;
   font-size: 2rem;
-  margin: .5rem auto;
   padding-bottom: 1rem;
 }
 
@@ -32,4 +132,62 @@ footer ul li {
 
 .credit {
   font-size: 1.3rem;
+}
+
+/****************TABLET SIZE****************/
+@media screen and (min-width: 768px) {
+  /******NAVBAR******/
+  .nav-content {
+    margin: 0 auto;
+    width: 80%;
+  }
+
+  nav ul li {
+    font-size: 1.8rem;
+  }
+
+  /******HERO******/
+  .hero {
+    border: 1px solid red;
+    padding-top: 12rem;
+  }
+
+  h1 {
+    font-size: 2.6rem;
+  }
+
+  .down-arrow {
+    margin: 10rem 0 2rem 0;
+  }
+
+  /******FOR ALL PROJECTS*****/
+  .container {
+    font-size: 2.0rem;
+    line-height: 1.4;
+    padding: 3rem .5rem;
+    text-align: center;
+  }
+
+  /******PROJECT1******/
+  .button {
+    background-color: #ED2F80;
+    border-radius: 5rem;
+    margin: 4.8rem;
+    padding: 2rem 1.6rem;
+    width: 70%;
+  }
+
+  /******FOOTER******/
+  .footer-content span {
+    display: block;
+  }
+
+}
+
+/****************DESKTOP****************/
+@media screen and (min-width: 1200px) {
+  /******FOOTER******/
+  .footer-content span {
+    display: block;
+  }
 }

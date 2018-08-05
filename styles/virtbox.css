@@ -163,7 +163,7 @@ footer ul li {
   }
 
   /******FOOTER******/
-  .footer-content span {
+  .footer-content {
     display: block;
   }
 
@@ -172,7 +172,7 @@ footer ul li {
 /****************DESKTOP****************/
 @media screen and (min-width: 1200px) {
   /******FOOTER******/
-  .footer-content span {
+  .footer-content {
     display: block;
   }
 

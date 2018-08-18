@@ -11,10 +11,15 @@ body {
   font-family: cabin;
 }
 
+p {
+  font-size: 1.6rem;
+  line-height: 1.1;
+  padding: 2rem 0;
+}
+
 /******NAVBAR******/
 nav {
   background-color: white;
-  display: inline-block;
   font-family: Raleway;
   width: 100%;
 }
@@ -25,7 +30,7 @@ nav a {
 }
 
 nav img {
-  padding: 1rem;
+  margin-left: 2.2rem;
   width: 8rem;
 }
 
@@ -48,74 +53,93 @@ nav ul li a:hover {
 }
 
 /******General info******/
-.intro, .container {
-  background-color: pink;
-  padding: 2rem;
+.container img {
+  height: 17.3rem;
+  width: 27.4rem;
 }
 
-.general img {
+.img2 {
+  width: 36rem;
+}
+
+.intro {
+  background: linear-gradient(to bottom, #ED2F80, #2F80ED);
+  color: #fff;
+}
+
+.grid, .grid1 {
+  display: grid;
+  grid-template-columns: 1fr;
+  list-style: none;
+  margin: 0 auto;
+  width: 95%;
+}
+
+.grid1 {
+  margin: 8rem auto 16rem auto;
+}
+
+.avatar, .general-info {
+  grid-column: 1;
+}
+
+.avatar {
+  background: url(../images/avatar.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   border-radius: 50%;
-  margin: 3.5rem auto;
+  height: 12rem;
+  margin: 3rem auto 1.5rem auto;
+  width: 12rem;
 }
 
 h1 {
+  font-family: Montserrat;
   font-size: 2.4rem;
   font-weight: 900;
-  margin-top: 1.5rem;
 }
 
 h3 {
+  font-weight: 600;
   font-size: 1.7rem;
-  margin-top: 1.5rem;
-  margin-bottom: 3rem;
 }
 
-p {
-  font-size: 1.6rem;
-}
-
-/******BODY TEXT STORY******/
-.container {
-    margin-bottom: 30rem;
-}
-
-.container p {
-  background-color: white;
-  margin: 1.5rem auto;
+.general-info p {
+  padding-bottom: 4.3rem;
+  width: 95%;
 }
 /******FOOTER******/
 footer {
   background-color: #212121;
   color: #FFFFFF;
-  font-family: Raleway;
+  font-family: Raleway;   /******MOBILE******/
+  margin-bottom: 0;
   padding: 2rem;
-  position: absolute;
-  width: 100%;
 }
 
 .footer-content {
   margin: auto;
-  text-align: center;
+  text-align: center; /******MOBILE******/
 }
 
 .footer-content div {
-  display: inline-block;
+  display: inline-block;    /******MOBILE******/
   font-size: 2rem;
   padding-bottom: 1rem;
 }
 
 footer ul {
-  margin-bottom: 1rem;
+  margin-bottom: 1rem;    /******MOBILE******/
   padding: .5rem;
 }
 
 footer ul li {
-  display: inline;
+  display: inline;    /******MOBILE******/
   padding: 1rem;
 }
 
 .credit {
-  font-size: 1.3rem;
+  font-size: 1.3rem;    /******MOBILE******/
 }
 
 /****************TABLET SIZE****************/
@@ -130,20 +154,58 @@ footer ul li {
     font-size: 1.8rem;
   }
 
-  /******HERO******/
-  .hero {
-    border: 1px solid red;
-    padding-top: 12rem;
+  p {
+    font-size: 1.8rem;
+  }
+  /******General info******/
+  .container img {
+    height: 30rem;
+    width: 38rem;
   }
 
-  h1 {
-    font-size: 2.6rem;
+  .img2 {
+    width: 72rem;
   }
 
-  .down-arrow {
-    margin: 10rem 0 2rem 0;
-  }
+ .intro {
+   padding: 5rem 0;
+ }
 
+ .grid {
+   background-color: lightblue;
+   grid-gap: 5rem;
+   grid-template-columns: 3fr 9fr;
+   grid-template-areas:
+       "avatar   general-info";
+ }
+
+ .grid1 {
+   width: 30%;
+ }
+
+.avatar {
+ background-color: black;
+ border-radius: 50%;
+ grid-area: avatar;
+ height: 25rem;
+ width: 25rem;
+}
+
+.general-info {
+ background-color: pink;
+ grid-area: general-info;
+ margin: 0 auto;
+ padding-right: 5rem;
+ padding-top: 2rem;
+ }
+
+ h1 {
+ font-size: 3.6rem;
+ }
+
+ h3 {
+ font-size: 2rem;
+ }
 
   /******FOOTER******/
   .footer-content {
@@ -155,8 +217,6 @@ footer ul li {
 /****************DESKTOP****************/
 @media screen and (min-width: 1200px) {
   /******FOOTER******/
-  .footer-content {
-    display: block;
-  }
+
 
 }

@@ -1,0 +1,228 @@
+@media screen and (min-width: 768px) {
+  .grid1, .grid2, .grid3 {
+    display: grid;
+    grid-template-columns: 3fr 6fr 3fr;
+    width: 80%;
+  }
+
+   .grid3 {
+    display: grid;
+    grid-template-columns: 3fr 6fr 3fr;  /******TABLET******/
+     grid-template-areas:
+    ".                whatIs            ."
+       ".                overview          ."
+    ".                probsol           ."
+    "theProcess       theProcess        theProcess"
+    "phases           phases            phases"
+    ".                discRe            ."
+    "competitors      competitors       competitors"
+    "personas         personas          personas"
+    ".                userStories       ."        /******TABLET******/
+    "userFlows        userFlows         userFlows"
+    ".                visualDesign      ."
+    "mockups          mockups           mockups"
+    ".                usabilityTests    ."
+    ".                logoSketches      ."
+    "mindMapping      mindMapping       mingMapping"
+    ".                brandingID        ."
+    ".                style             ."
+    ".                hifi              ."
+    "figma            figma             figma"
+    ".                testings          ."
+    ".                secondIteration   ."
+    ".                thirdIteration    ."
+    ".                usabilityTests2   ."
+    ".                final             ."
+    ".                lesson            .";
+     padding: 0;
+  }
+  /******NAVBAR******/
+  .grid1 {
+    margin: 0 auto;   /******TABLET******/
+    width: 80%;
+  }
+
+  nav ul li {
+    font-size: 1.8rem;
+  }
+
+  /******HERO******/
+  .grid2 {
+    display: grid;            /******TABLET******/
+    grid-gap: 2rem;
+    grid-template-columns: 2fr 1fr;
+  }
+
+  .right-content {            /******TABLET******/
+    font-size: 4rem;
+    margin: 0 auto;
+  }
+
+  .summary {
+    line-height: 1.5cm;
+  }
+
+  .button {
+    font-size: 1.8rem;  /******TABLET******/
+    padding: 1.5rem 3rem;
+  }
+
+   /******WHAT IS SECTION*****/
+    .whatIs {
+      grid-area: whatIs;    /******TABLET******/
+    }
+
+    .overview {
+    grid-area: overview;
+  }
+
+  /******overview******/
+  .probsol {
+    grid-area: probsol;
+  }
+
+  .theProcess {
+    grid-area: theProcess;      /******TABLET******/
+  }
+
+  /******PHASES PROCESS******/
+  .phases {
+    grid-template-columns: 1fr 1fr ;
+  }
+
+  .phases {
+    grid-area: phases;
+  }
+
+  .discRe {
+    grid-area: discRe;
+  }
+
+  .competitors {
+    grid-area: competitors;     /******TABLET******/
+  }
+
+  /******COMPETITORS******/
+  .analysis {
+    grid-gap: 8rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 0 auto;
+  }
+
+  .complogo {
+    margin-bottom: 2rem;
+  }
+
+
+  /******PERSONAS******/
+  .personas {
+    grid-area: personas;
+  }
+
+  .col {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 4.6rem auto;
+    width: 80%;
+  }
+
+  .persona1, .persona2, .persona3 {
+    line-height: .8cm;
+    padding: 4.3rem;
+  }
+
+  .name {
+    font-size: 2.4rem;
+    margin-top: 3rem;
+  }
+
+  .quote {
+    margin: 2rem auto;
+  }
+
+
+  .userStories {
+    grid-area: userStories;     /******TABLET******/
+  }
+
+  .userFlows {
+    grid-area: userFlows;
+  }
+
+  .visualDesign {
+    grid-area: visualDesign;    /******TABLET******/
+  }
+
+  .mockups {
+    grid-area: mockups;
+  }
+
+  .usabilityTests {
+    grid-area: usabilityTests;    /******TABLET******/
+  }
+
+  .logoSketches {
+    grid-area: logoSketches;
+  }
+
+  .mindMapping {
+    grid-area: mingMapping;   /******TABLET******/
+  }
+
+  .brandingID {
+    grid-area: brandingID;
+  }
+
+  .style {
+    grid-area: style;       /******TABLET******/
+  }
+
+  .hifi {
+    grid-area: hifi;
+  }
+
+  .figma {
+    grid-area: figma;         /******TABLET******/
+  }
+
+  .testings {
+    grid-area: testings;
+  }
+
+  .secondIteration {
+    grid-area: secondIteration; /******TABLET******/
+  }
+
+  .thirdIteration {
+    grid-area: thirdIteration;
+  }
+
+  .usabilityTests2 {
+    grid-area: usabilityTests2; /******TABLET******/
+  }
+
+  .final {
+    grid-area: final;
+  }
+
+  .lesson {
+    grid-area: lesson;
+  }
+
+
+  /******FOOTER******/
+  .footer-content {     /******TABLET******/
+    display: block;
+  }
+
+ }
+/****************DESKTOP****************/
+@media screen and (min-width: 1000px) {
+  /****************HERO****************/
+
+  /******PHASES PROCESS******/
+  .phases {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+}

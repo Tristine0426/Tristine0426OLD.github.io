@@ -1,6 +1,5 @@
 * {
   box-sizing: border-box;
-  border: 1px solid black;
 }
 
 html {
@@ -8,19 +7,91 @@ html {
 }
 
 body {
-  background-color: white;
-  font-family: cabin;
+  background-color: #FFF;
+  font-family: Cabin;           /******MOBILE******/
+  font-size: 1.6rem;
 }
 
-.container {
-  background-color: white;
+.nav-content, .grid2, .grid3 {
+  border: 1px solid black;
+  display: grid;
+  grid-template-columns: 1fr;
   margin: 0 auto;
-  width: 100%;
+  width: 90%;
 }
+
+.grid3 {
+  line-height: .5cm;
+  text-align: center;
+  margin-bottom: 20rem;
+  padding: 0 1rem;
+}
+
+section {
+  /*****margin: 5.6rem auto;              *MOBILE******/
+  border: 1px solid black;
+  margin-bottom: 2.2rem;
+}
+
+h3, h4 {
+  font-family: Montserrat;
+  font-weight: bold;
+  text-align: center;
+}
+
+h3 {
+  color: #2F80ED;
+  font-size: 2.4rem;            /******MOBILE******/
+  line-height: .8cm;
+  margin-bottom: 2.2rem;
+}
+
+h4 {
+  color: #2D9CDB;
+  font-size: 1.8rem;
+  margin-bottom: 2.2rem;
+}
+
+h5 {
+  font-size: 2rem;
+}
+
+h6 {
+  font-size: 1.6rem;
+  font-weight: 900;
+}
+
+.coloredbg {
+  background-color: #F9F9F9;    /******MOBILE******/
+}
+
+.bold {
+  font-weight: 900;
+}
+
+a {
+  color: #ED2F80;
+  font-weight: 900;           /******MOBILE******/
+}
+
+.link {
+  margin-top: 2.2rem;
+}
+
+.discRe p, .survey, .competitors, .userStories, .visualDesign, .usabilityTests,
+.brandingID, .style, .hifi, .secondIteration, .usabilityTests2, .lesson {
+  text-align: left;           /******MOBILE******/
+}
+
+hr {
+  border: .2rem solid #2F80ED;    /******MOBILE******/
+  width: 10rem;
+}
+
 /******NAVBAR******/
 nav {
   background-color: white;
-  display: inline-block;
+  display: inline-block;        /******MOBILE******/
   font-family: Raleway;
   width: 100%;
 }
@@ -31,7 +102,7 @@ nav a {
 }
 
 nav img {
-  padding: 1rem;
+  margin-left: 2.2rem;          /******MOBILE******/
   width: 8rem;
 }
 
@@ -42,7 +113,7 @@ nav ul {
 nav ul li {
   display: inline-block;
   font-family: Raleway;
-  font-size: 1.4rem;
+  font-size: 1.4rem;              /******MOBILE******/
   font-weight: 900;
   list-style: none;
   padding: 2.2rem;
@@ -54,126 +125,620 @@ nav ul li a:hover {
 }
 
 /******HERO******/
-.hero {
+.hero-background {
   background: linear-gradient(rgba(	33, 212, 253, 0.6),rgba(59, 88, 252, 0.6)),
   url(../images/cloud.jpg);
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-repeat: no-repeat;           /******MOBILE******/
+  background-size: cover;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
 }
 
-h1 {
-  font-size: 2.6rem;
+.grid2 {
+  display: grid;
+  grid-template-columns: 1fr;   /******MOBILE******/
+  margin-bottom: 4rem;
+  padding: 3.2rem;
 }
 
-/******SECTION******/
-section {
-  background-color: lightblue;
-  font-size: 1.8rem;
-  margin-top: 1rem;
-  padding: 5rem 0;
+.left-content {
+  background-repeat: no-repeat;   /******MOBILE******/
+  height: 100%;
   width: 100%;
 }
 
-/******THE PROCESS SECTION******/
-.phase {
-  border: 0.3rem solid;
-  border-radius: 1rem;
-  display: inline-block;
-  margin: 20% .2%;
-  padding: 5rem;
-  width: 25rem;
-  height: 38rem;
+.right-content {
+  color: white;
+  font-size: 2.8rem;
+  font-weight: 900;
+  line-height: 1.1cm;
+  margin: 0 auto;
+  padding-top: 3rem;
 }
+
+.summary {
+  margin-bottom: 3rem;
+}
+
+.button {
+  background-color: #ED2F80;    /******MOBILE******/
+  border-radius: 5rem;
+  color: inherit;
+  font-size: 1.6rem;
+  padding: 1.45rem 3rem;
+  text-decoration: none;
+}
+
+.button:hover {
+  background-color: #fff;
+  border: 3px solid #ED2F80;
+  color: #ED2F80;
+}
+
+/******what is virtBox******/
+.rolesTools {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: 1fr 1fr;
+  line-height: .5cm;          /******MOBILE******/
+  margin: 2.2rem auto 0;
+}
+
+.title1, .title2 {
+  font-weight: 900;             /******MOBILE******/
+  margin-bottom: 2rem;
+}
+
+.roles {
+  border-right: 1px solid black;
+}
+
+/******overview******/
+.probsol {
+  border: 1px solid black;
+  display: grid;                   /******MOBILE******/
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+.probsol1, .probsol2, .probsol3 {          /******MOBILE******/
+  border: 1px solid black;
+  margin-top: 2.2rem;
+  text-align: left;
+}
+
+
+.probsol1 img, .probsol2 img, .probsol3 img {
+  margin-top: 2rem;
+}
+
+.probsol1 {
+  margin-top: 0;
+}
+
+.sad, .happy {
+  height: 3.6rem;
+  width: 3.6rem;
+}
+
+.sadtest {
+  list-style-image: url('../images/icons-logos/sad.svg');
+}
+
+.prob {
+  color: #EB5757;       /******MOBILE******/
+}
+
+.happytest {
+  list-style-image: url('../images/icons-logos/happy.svg');
+}
+
+.sol {
+  color: #2D9CDB;
+}
+/******PHASES PROCESS******/
+.phases {
+  background-color: #F9F9F9;
+  display: grid;
+  grid-gap: 2.2rem;
+  grid-template-columns: 1fr;
+  margin-bottom: 0            /******MOBILE******/
+  padding: 0;
+}
+
+.phases ul li {
+  list-style-type: disc;
+  text-align: left;           /******MOBILE******/
+}
+
+.phase1, .phase2, .phase3, .phase4 {
+  background-color: white;
+  border-radius: 1rem;
+  padding: 5rem;              /******MOBILE******/
+  width: 100%;
+}
+
+.phase1 {
+  border: .3rem solid #F2994A;
+}
+
+.phase2 {
+  border: .3rem solid #F2C94C;      /******MOBILE******/
+}
+
+.phase3 {
+  border: .3rem solid #27AE60;
+}
+
+.phase4 {
+  border: .3rem solid #2F80ED;    /******MOBILE******/
+}
+
+.title {
+  border: 1px solid black;
+  height: 5.5rem;           /******MOBILE******/
+  margin: 2rem auto;
+}
+
+/******USER SURVEY******/
+.data {
+  background-color: #D9DFFE;        /******MOBILE******/
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 2.2rem auto;
+  padding: 3rem;
+}
+
+h5 {
+  margin: 0;            /******MOBILE******/
+}
+
+.data ul li {
+  margin-bottom: 2rem;
+}
+
+.data ul li p{
+  border: 1px solid black;
+  height: 3.5rem;       /******MOBILE******/
+  text-align: center;
+}
+
+.survey {
+  list-style-type: circle;
+}
+
+
+/******COMPETITORS******/
+.competitor {           /******MOBILE******/
+  margin-bottom: 0;
+}
+
+.analysis {
+  display: grid;
+  grid-gap: 3rem;
+  grid-template-columns: 1fr;
+}
+
+.complogo {
+  height: 16.3rem;      /******MOBILE******/
+  margin-bottom: 1rem;
+}
+
+.takeaway1 ul {
+  text-align: left;
+}
+/******PERSONAS******/
+.personas {
+  margin-bottom: 0;
+}
+
+.col {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 2.2rem auto;
+  text-align: left;
+  width: 100%;
+}
+
+.persona1, .persona2, .persona3 {
+  border: 1px solid black;
+  line-height: .5cm;
+  padding: 4.3rem;
+
+}
+
+.persona1, .persona3 {
+  background-color: #FAFBFB;
+}
+
+.avatar1, .avatar2, .avatar3 {
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 50%;
+    height: 13rem;
+    margin: 0 auto;
+    width: 13rem;
+  }
+
+  .avatar3 {
+    background: url(../images/sean.jpg);
+  }
+
+.col ul li {
+  list-style-type: disc;
+}
+
+.name, .quote {
+  font-weight: 900;
+  text-align: center;
+}
+
+.name {
+  font-size: 2.4rem;
+  margin-top: 2rem;
+}
+
+.quote {
+  color: #00C853;
+  margin: 1rem auto;
+}
+
+/******VISUAL DESIGN******/
+.visualDesign {
+  text-align: center;
+}
+
+/******USABILITY TESTS******/
+
 
 /******FOOTER******/
 footer {
   background-color: #212121;
   color: #FFFFFF;
-  font-family: Raleway;
+  font-family: Raleway;   /******MOBILE******/
+  margin-bottom: 0;
   padding: 2rem;
-  position: absolute;
-  width: 100%;
 }
 
 .footer-content {
   margin: auto;
-  text-align: center;
+  text-align: center; /******MOBILE******/
 }
 
 .footer-content div {
-  display: inline-block;
+  display: inline-block;    /******MOBILE******/
   font-size: 2rem;
   padding-bottom: 1rem;
 }
 
 footer ul {
-  margin-bottom: 1rem;
+  margin-bottom: 1rem;    /******MOBILE******/
   padding: .5rem;
 }
 
 footer ul li {
-  display: inline;
+  display: inline;    /******MOBILE******/
   padding: 1rem;
 }
 
 .credit {
-  font-size: 1.3rem;
+  font-size: 1.3rem;    /******MOBILE******/
 }
 /****************TABLET SIZE****************/
 @media screen and (min-width: 768px) {
-  /******NAVBAR******/
-  .nav-content {
-    margin: 0 auto;
+  body {
+  font-size: 1.8rem;
+  }
+
+  .nav-content, .grid2, .grid3 {
+    display: grid;
+    grid-template-columns: 3fr 6fr 3fr;
     width: 80%;
   }
 
-  nav ul li {
-    font-size: 1.8rem;
+   .grid3 {
+    display: grid;
+    grid-template-columns: 3fr 6fr 3fr;  /******TABLET******/
+     grid-template-areas:
+    ".                whatIs            ."
+    ".                overview          ."
+    "probsol          probsol           probsol"
+    "theProcess       theProcess        theProcess"
+    "phases           phases            phases"
+    ".                discRe            ."
+    "competitors      competitors       competitors"
+    ".                takeaway1          ."
+    "personas         personas          personas"
+    ".                takeaway2          ."
+    ".                userStories       ."        /******TABLET******/
+    "userFlows        userFlows         userFlows"
+    ".                visualDesign      ."
+    "mockups          mockups           mockups"
+    ".                usabilityTests    ."
+    ".                logoSketches      ."
+    "mindMapping      mindMapping       mingMapping"
+    ".                brandingID        ."
+    ".                style             ."
+    ".                hifi              ."
+    "figma            figma             figma"
+    ".                testings          ."
+    ".                secondIteration   ."
+    ".                thirdIteration    ."
+    ".                usabilityTests2   ."
+    ".                final             ."
+    ".                lesson            .";
+     padding: 0;
   }
 
-  /******HERO******/
-  .hero {
-    border: 1px solid red;
-    padding-top: 12rem;
-  }
+  section {
+    margin-bottom: 5.35rem;
+}
 
-  h1 {
+h3 {
+  font-size: 3rem;    /******TABLET******/
+  margin-bottom: 4.4rem;
+}
+
+h4 {
+  font-size: 2.6rem;    /******TABLET******/
+  margin-bottom: 4.4rem;
+}
+
+  h5 {
     font-size: 2.6rem;
   }
 
-  .down-arrow {
-    margin: 10rem 0 2rem 0;
-  }
-
-  /******FOR ALL PROJECTS*****/
-  .container {
-    font-size: 2.0rem;
-    line-height: 1.4;
-    padding: 3rem .5rem;
-    text-align: center;
-  }
-
-  /******PROJECT1******/
-  .button {
-    background-color: #ED2F80;
-    border-radius: 5rem;
-    margin: 4.8rem;
-    padding: 2rem 1.6rem;
-    width: 70%;
-  }
-
-  /******FOOTER******/
-  .footer-content {
-    display: block;
-  }
-
+h6 {
+  font-size: 1.8rem;
+}
+/******NAVBAR******/
+.nav-content {
+  margin: 0 auto;
+  width: 80%;
 }
 
-/****************DESKTOP****************/
-@media screen and (min-width: 1200px) {
+nav ul li {
+  font-size: 1.8rem;     /******TABLET******/
+}
+
+
+  /******HERO******/
+  .grid2 {
+    display: grid;            /******TABLET******/
+    grid-gap: rem;
+    grid-template-columns: 2fr 1fr;
+    padding: 8.5rem 0;
+  }
+
+  .right-content {            /******TABLET******/
+    font-size: 4rem;
+    margin: 0 auto;
+  }
+
+  .summary {
+    line-height: 1.5cm;
+  }
+
+  .button {
+    font-size: 1.8rem;  /******TABLET******/
+    padding: 1.5rem 3rem;
+  }
+
+   /******WHAT IS SECTION*****/
+    .whatIs {
+      grid-area: whatIs;    /******TABLET******/
+    }
+
+    .rolesTools {
+      line-height: .7cm;
+      margin: 4.3rem auto 0 auto;
+    }
+
+/******overview******/
+    .overview {
+    grid-area: overview;
+  }
+
+  .probsol {
+    border: 1px solid black;
+    display: grid;                /******TABLET******/
+    grid-area: probsol;
+    grid-gap 1rem;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .probsol1, .probsol2, .probsol3 {
+    border: 1px solid black;          /******TABLET******/
+    margin-top: 3rem;
+  }
+
+  .solscr {
+    height: auto;
+    width: 49.2rem;
+  }
+
+  .probsol1 {
+    margin-top: 0;
+  }
+
+  .sad, .happy {
+
+  }
+
+  .prob{
+    margin-top: 2rem;     /******TABLET******/
+  }
+
+  .sol {
+    margin-bottom: 2rem;
+  }
+
+  /******PHASES PROCESS******/
+  .theProcess {
+    grid-area: theProcess;      /******TABLET******/
+    margin-bottom: 0;
+  }
+
+  .phases {
+    grid-area: phases;
+    grid-template-columns: 1fr 1fr ;
+    margin-bottom: 5.35rem;
+  }
+
+  /******USER SURVEY******/
+  .discRe {
+    grid-area: discRe;
+  }
+
+  .data {
+    margin: 4.3rem auto;            /******TABLET******/
+  }
+
+  .competitors {
+    grid-area: competitors;     /******TABLET******/
+    margin-bottom: 0;
+  }
+
+  /******COMPETITORS******/
+  .analysis {
+    grid-gap: 8rem;             /******TABLET******/
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 0 auto;
+  }
+
+  .complogo {
+    margin-bottom: 2rem;
+  }
+
+  .takeaway1 {
+    grid-area: takeaway1;         /******TABLET******/
+  }
+  /******PERSONAS******/
+  .personas {
+    grid-area: personas;
+  }
+
+  .col {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 4.6rem auto;
+    width: 100%;
+  }
+
+  .persona1, .persona2, .persona3 {
+    line-height: .8cm;
+    padding: 4.3rem;
+  }
+
+  .avatar1, .avatar2, .avatar3 {
+      height: 15rem;
+      width: 15rem;
+    }
+
+  .name {
+    font-size: 2.4rem;
+    margin-top: 3rem;
+  }
+
+  .quote {
+    margin: 2rem auto;
+  }
+
+  .takeaway2 {
+    grid-area: takeaway2;
+  }
+  .userStories {
+    grid-area: userStories;     /******TABLET******/
+  }
+
+  .userFlows {
+    grid-area: userFlows;
+  }
+
+  .visualDesign {
+    grid-area: visualDesign;    /******TABLET******/
+  }
+
+  .mockups {
+    grid-area: mockups;
+  }
+
+  .usabilityTests {
+    grid-area: usabilityTests;    /******TABLET******/
+  }
+
+  .logoSketches {
+    grid-area: logoSketches;
+  }
+
+  .mindMapping {
+    grid-area: mingMapping;   /******TABLET******/
+  }
+
+  .brandingID {
+    grid-area: brandingID;
+  }
+
+  .style {
+    grid-area: style;       /******TABLET******/
+  }
+
+  .hifi {
+    grid-area: hifi;
+  }
+
+  .figma {
+    grid-area: figma;         /******TABLET******/
+  }
+
+  .testings {
+    grid-area: testings;
+  }
+
+  .secondIteration {
+    grid-area: secondIteration; /******TABLET******/
+  }
+
+  .thirdIteration {
+    grid-area: thirdIteration;
+  }
+
+  .usabilityTests2 {
+    grid-area: usabilityTests2; /******TABLET******/
+  }
+
+  .final {
+    grid-area: final;
+  }
+
+  .lesson {
+    grid-area: lesson;
+  }
+
+
   /******FOOTER******/
-  .footer-content {
+  .footer-content {     /******TABLET******/
     display: block;
   }
+
+ }
+/****************DESKTOP****************/
+@media screen and (min-width: 1000px) {
+  /****************HERO****************/
+
+  /******PHASES PROCESS******/
+  .phases {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  .phase1, .phase2, .phase3, .phase4 {
+    padding: 3rem;
+  }
+
+  /******PERSONAS******/
+  .personas {
+    grid-area: personas;
+  }
+
 
 }

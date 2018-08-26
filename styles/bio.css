@@ -1,4 +1,5 @@
 * {
+  border: 1px solid black;
   box-sizing: border-box;
 }
 
@@ -13,25 +14,30 @@ body {
 
 p {
   font-size: 1.6rem;
-  line-height: 1.1;
-  padding: 2rem 0;
+  line-height: .7cm;
 }
-
 /******NAVBAR******/
 nav {
   background-color: white;
+  display: inline-block;      /******MOBILE******/
   font-family: Raleway;
+  padding: 1rem;
   width: 100%;
+}
+
+.nav-content {
+  margin: 0 auto;
+  width: 90%;     /******MOBILE******/
 }
 
 nav a {
   color: black;
-  text-decoration: none;
+  text-decoration: none; /******MOBILE******/
 }
 
 nav img {
-  margin-left: 2.2rem;
-  width: 8rem;
+  padding: 1rem;
+  width: 8rem;      /******MOBILE******/
 }
 
 nav ul {
@@ -39,7 +45,7 @@ nav ul {
 }
 
 nav ul li {
-  display: inline-block;
+  display: inline-block;      /******MOBILE******/
   font-family: Raleway;
   font-size: 1.4rem;
   font-weight: 900;
@@ -53,159 +59,167 @@ nav ul li a:hover {
 }
 
 /******General info******/
-.container img {
-  height: 17.3rem;
-  width: 27.4rem;
-}
-
-.img2 {
-  width: 36rem;
-}
-
 .intro {
   background: linear-gradient(to bottom, #ED2F80, #2F80ED);
   color: #fff;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%); /******MOBILE******/
+  clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
 }
 
-.grid, .grid1 {
+.grid, .grid1 li{
   display: grid;
   grid-template-columns: 1fr;
   list-style: none;
-  margin: 0 auto;
-  width: 95%;
+  margin: 0 auto;                 /******MOBILE******/
+  width: 90%;
 }
 
 .grid1 {
-  margin: 8rem auto 16rem auto;
+  margin: ;          /******MOBILE******/
 }
 
 .avatar, .general-info {
-  grid-column: 1;
+  grid-column: 1;             /******MOBILE******/
 }
 
 .avatar {
+  margin: 2rem auto;
+}
+
+.avatar img {
   background: url(../images/avatar.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 50%;
   height: 12rem;
-  margin: 3rem auto 1.5rem auto;
   width: 12rem;
+}
+
+.general-info h1 {
+  margin-bottom: 1rem;
+}
+
+.general-info h3 {
+  margin-bottom: 2.2rem;          /******MOBILE******/
 }
 
 h1 {
   font-family: Montserrat;
   font-size: 2.4rem;
-  font-weight: 900;
+  font-weight: 900;             /******MOBILE******/
 }
 
 h3 {
-  font-weight: 600;
+  font-weight: 600;             /******MOBILE******/
   font-size: 1.7rem;
 }
 
+.general-info {
+  padding-bottom: 2rem;
+}
+
 .general-info p {
-  padding-bottom: 4.3rem;
-  width: 95%;
+  padding-bottom: 4.3rem;       /******MOBILE******/
+}
+/******BODY TEXT STORY******/
+.grid1 {
+    margin-bottom: 8rem;
+}
+
+.grid1 li {                 /******MOBILE******/
+  margin: 2.2rem auto;
+}
+
+.grid1 img {                /******MOBILE******/
+  width: 100%;
 }
 /******FOOTER******/
 footer {
   background-color: #212121;
   color: #FFFFFF;
-  font-family: Raleway;   /******MOBILE******/
-  margin-bottom: 0;
-  padding: 2rem;
+  font-family: Raleway;
+  padding: 2rem;                /******MOBILE******/
+  position: absolute;
+  width: 100%;
 }
 
 .footer-content {
-  margin: auto;
-  text-align: center; /******MOBILE******/
+  margin: auto;                 /******MOBILE******/
+  text-align: center;
 }
 
 .footer-content div {
-  display: inline-block;    /******MOBILE******/
-  font-size: 2rem;
+  display: inline-block;
+  font-size: 2rem;              /******MOBILE******/
   padding-bottom: 1rem;
 }
 
 footer ul {
-  margin-bottom: 1rem;    /******MOBILE******/
+  margin-bottom: 1rem;
   padding: .5rem;
 }
 
 footer ul li {
-  display: inline;    /******MOBILE******/
+  display: inline;
   padding: 1rem;
 }
 
 .credit {
-  font-size: 1.3rem;    /******MOBILE******/
+  font-size: 1.3rem;
 }
 
 /****************TABLET SIZE****************/
 @media screen and (min-width: 768px) {
+  p {
+    font-size: 1.8rem;
+  }
   /******NAVBAR******/
-  .nav-content {
-    margin: 0 auto;
+  .nav-content, .grid {
     width: 80%;
   }
 
   nav ul li {
-    font-size: 1.8rem;
+    font-size: 1.8rem;     /******TABLET******/
   }
 
-  p {
-    font-size: 1.8rem;
-  }
   /******General info******/
-  .container img {
-    height: 30rem;
-    width: 38rem;
+  .intro {
+    padding: 5rem 0;
   }
 
-  .img2 {
-    width: 72rem;
+  .grid {
+    grid-template-columns: 3fr 9fr;   /******DESKTOP******/
+    grid-template-areas:
+        "avatar   general-info";
   }
 
- .intro {
-   padding: 5rem 0;
- }
+  .grid1 {
+  grid-template-columns: 1fr;
+  margin: 5rem auto 8rem auto;
+  width: 50%;                         /******TABLET******/
+}
 
- .grid {
-   background-color: lightblue;
-   grid-gap: 5rem;
-   grid-template-columns: 3fr 9fr;
-   grid-template-areas:
-       "avatar   general-info";
- }
-
- .grid1 {
-   width: 30%;
- }
-
-.avatar {
- background-color: black;
- border-radius: 50%;
- grid-area: avatar;
- height: 25rem;
- width: 25rem;
+.avatar img {
+  grid-area: avatar;
+  height: 25rem;
+  width: 25rem;             /******TABLET******/
 }
 
 .general-info {
- background-color: pink;
- grid-area: general-info;
- margin: 0 auto;
- padding-right: 5rem;
- padding-top: 2rem;
- }
+  grid-area: general-info;
+  height: 80%;
+  margin: auto;
+  padding-bottom: 6rem;
+  width: 80%;
+  }
 
- h1 {
- font-size: 3.6rem;
- }
+  h1 {
+  font-size: 3.6rem;
+  }
 
- h3 {
- font-size: 2rem;
- }
+  h3 {
+  font-size: 2rem;
+  }
 
   /******FOOTER******/
   .footer-content {
@@ -216,7 +230,14 @@ footer ul li {
 
 /****************DESKTOP****************/
 @media screen and (min-width: 1200px) {
+  /******GENERAL INFO******/
+
+  .grid1 {
+    margin-bottom: 10rem;
+    width: 45%;                         /******DESKTOP******/
+}
   /******FOOTER******/
-
-
+  .footer-content {
+    display: block;
+  }
 }

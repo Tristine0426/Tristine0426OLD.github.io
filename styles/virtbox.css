@@ -1,4 +1,5 @@
 * {
+  border: 1px solid black;
   box-sizing: border-box;
 }
 
@@ -12,48 +13,66 @@ body {
   font-size: 1.6rem;
 }
 
-.nav-content, .grid2, .grid3 {
-  border: 1px solid black;
-  display: grid;
+.grid-bg {
+  background-color: #F9F9F9;
+  width: 100%;
+}
+
+.nav-bar, .grid1, .grid2, .hover-box, .grid4, .styleGuide {
+  /******border: 1px solid black; ****/
+  display: grid;              /******MOBILE******/
   grid-template-columns: 1fr;
   margin: 0 auto;
   width: 90%;
 }
 
-.grid3 {
-  line-height: .5cm;
+
+.grid2, .grid4 {
+  line-height: .7cm;
   text-align: center;
-  margin-bottom: 20rem;
   padding: 0 1rem;
 }
 
 section {
   /*****margin: 5.6rem auto;              *MOBILE******/
-  border: 1px solid black;
-  margin-bottom: 2.2rem;
+  /***border: 1px solid black;****/
+  padding-bottom: 2.2rem;
+  padding-top: 2.2rem;
 }
 
-h3, h4 {
+.probsol, .competitors, .personas, .takeaway1, .userStories, .visualDesign, .styleGuide, .v2, .v3, .finish, .added {
+ padding: 0;
+}
+
+.competitors, .personas, .userStories {
+  padding-top: 2.2rem;
+}
+
+.probsol, .phases, .takeaway1, .grid4-content, .download-style, .book {
+  padding-bottom: 2.2rem;
+}
+
+h2, h3 {
   font-family: Montserrat;
   font-weight: bold;
+  line-height: .8cm;
   text-align: center;
 }
 
-h3 {
+h2 {
   color: #2F80ED;
-  font-size: 2.4rem;            /******MOBILE******/
-  line-height: .8cm;
+  font-size: 2.6rem;            /******MOBILE******/
+  margin-bottom: 2.2rem;
+}
+
+h3 {
+  color: #2D9CDB;
+  font-size: 2.4rem;
   margin-bottom: 2.2rem;
 }
 
 h4 {
-  color: #2D9CDB;
-  font-size: 1.8rem;
-  margin-bottom: 2.2rem;
-}
-
-h5 {
-  font-size: 2rem;
+  font-size: 2.2rem;
 }
 
 h6 {
@@ -61,39 +80,40 @@ h6 {
   font-weight: 900;
 }
 
-.coloredbg {
-  background-color: #F9F9F9;    /******MOBILE******/
-}
-
 .bold {
   font-weight: 900;
 }
 
-a {
+.link a, .download a, .download-style a {
   color: #ED2F80;
   font-weight: 900;           /******MOBILE******/
 }
 
-.link {
-  margin-top: 2.2rem;
+.link, .download, .download-style {
+  margin: 2.2rem auto 0 auto;
+  text-align: center;
 }
 
-.discRe p, .survey, .competitors, .userStories, .visualDesign, .usabilityTests,
+.discRe p, .survey, .competitors, .userStories, .usabilityTests,
 .brandingID, .style, .hifi, .secondIteration, .usabilityTests2, .lesson {
   text-align: left;           /******MOBILE******/
 }
 
 hr {
   border: .2rem solid #2F80ED;    /******MOBILE******/
+  margin-bottom: 2.2rem;
   width: 10rem;
 }
 
+.last, .competitors, .personas, footer, .theProcess, .visualDesign, .mindMapping, .final-title h3 {
+  padding-bottom: 0;
+}
 /******NAVBAR******/
 nav {
   background-color: white;
-  display: inline-block;        /******MOBILE******/
+  display: inline-block;      /******MOBILE******/
   font-family: Raleway;
-  width: 100%;
+  padding: 1rem;
 }
 
 nav a {
@@ -102,19 +122,21 @@ nav a {
 }
 
 nav img {
-  margin-left: 2.2rem;          /******MOBILE******/
+  display: inline-block;
+  float: left;
+  padding: 1rem;
   width: 8rem;
 }
 
-nav ul {
+nav ul {                  /******MOBILE******/
   float: right;
 }
 
 nav ul li {
   display: inline-block;
   font-family: Raleway;
-  font-size: 1.4rem;              /******MOBILE******/
-  font-weight: 900;
+  font-size: 1.4rem;
+  font-weight: 900;           /******MOBILE******/
   list-style: none;
   padding: 2.2rem;
   text-transform: uppercase;
@@ -124,6 +146,7 @@ nav ul li a:hover {
   color: #ED2F80;
 }
 
+
 /******HERO******/
 .hero-background {
   background: linear-gradient(rgba(	33, 212, 253, 0.6),rgba(59, 88, 252, 0.6)),
@@ -132,13 +155,14 @@ nav ul li a:hover {
   background-size: cover;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
   clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
+  padding: 0;
 }
 
-.grid2 {
+.grid1 {
   display: grid;
   grid-template-columns: 1fr;   /******MOBILE******/
-  margin-bottom: 4rem;
-  padding: 3.2rem;
+  padding-bottom: 9.2rem;
+  padding-top: 3.2rem;
 }
 
 .left-content {
@@ -151,12 +175,12 @@ nav ul li a:hover {
   color: white;
   font-size: 2.8rem;
   font-weight: 900;
-  line-height: 1.1cm;
   margin: 0 auto;
   padding-top: 3rem;
 }
 
 .summary {
+  line-height: 1.2cm;
   margin-bottom: 3rem;
 }
 
@@ -165,13 +189,14 @@ nav ul li a:hover {
   border-radius: 5rem;
   color: inherit;
   font-size: 1.6rem;
-  padding: 1.45rem 3rem;
+  padding: 1.45rem;
   text-decoration: none;
+  width: 22rem;
 }
 
 .button:hover {
   background-color: #fff;
-  border: 3px solid #ED2F80;
+  border: 2px solid #ED2F80;
   color: #ED2F80;
 }
 
@@ -180,7 +205,6 @@ nav ul li a:hover {
   display: grid;
   grid-gap: 1rem;
   grid-template-columns: 1fr 1fr;
-  line-height: .5cm;          /******MOBILE******/
   margin: 2.2rem auto 0;
 }
 
@@ -195,34 +219,33 @@ nav ul li a:hover {
 
 /******overview******/
 .probsol {
-  border: 1px solid black;
+/***  border: 1px solid black;*****/
   display: grid;                   /******MOBILE******/
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
 }
 
 .probsol1, .probsol2, .probsol3 {          /******MOBILE******/
   border: 1px solid black;
+  line-height: 1.5cm;
+  list-style-type: none;
   margin-top: 2.2rem;
   text-align: left;
 }
 
-
-.probsol1 img, .probsol2 img, .probsol3 img {
-  margin-top: 2rem;
-}
-
 .probsol1 {
-  margin-top: 0;
+  margin-top: 0;      /******MOBILE******/
 }
 
 .sad, .happy {
   height: 3.6rem;
+  line-height: 2cm;
+  margin-right: 1rem;
+  vertical-align: middle;     /******MOBILE******/
   width: 3.6rem;
 }
 
 .sadtest {
-  list-style-image: url('../images/icons-logos/sad.svg');
+  list-style: none url('../images/icons-logos/sad.svg') outside;
 }
 
 .prob {
@@ -240,10 +263,11 @@ nav ul li a:hover {
 .phases {
   background-color: #F9F9F9;
   display: grid;
-  grid-gap: 2.2rem;
-  grid-template-columns: 1fr;
-  margin-bottom: 0            /******MOBILE******/
-  padding: 0;
+  grid-gap: 1.5rem;
+  grid-template-columns: 1fr;   /******MOBILE******/
+  margin: 0 auto;
+  padding-top: 0;
+  width: 60%;
 }
 
 .phases ul li {
@@ -255,7 +279,6 @@ nav ul li a:hover {
   background-color: white;
   border-radius: 1rem;
   padding: 5rem;              /******MOBILE******/
-  width: 100%;
 }
 
 .phase1 {
@@ -276,43 +299,50 @@ nav ul li a:hover {
 
 .title {
   border: 1px solid black;
-  height: 5.5rem;           /******MOBILE******/
+  height: 7rem;           /******MOBILE******/
   margin: 2rem auto;
 }
 
 /******USER SURVEY******/
 .data {
+  border: 1px solid black;
   background-color: #D9DFFE;        /******MOBILE******/
   display: grid;
+  grid-gap: 1rem;
   grid-template-columns: 1fr 1fr;
   margin: 2.2rem auto;
   padding: 3rem;
 }
 
-h5 {
-  margin: 0;            /******MOBILE******/
-}
-
-.data ul li {
-  margin-bottom: 2rem;
+h4 {
+  font-weight: 900;
+  margin-bottom: 1rem;            /******MOBILE******/
 }
 
 .data ul li p{
-  border: 1px solid black;
-  height: 3.5rem;       /******MOBILE******/
+  height: 7rem;
+       /******MOBILE******/
   text-align: center;
 }
 
-.survey {
-  list-style-type: circle;
+.data-content {
+  border: 1px solid black;
+  height: 8.5rem;               /******MOBILE******/
+  margin-bottom: 1rem;
+  overflow: hidden;
+}
+
+.last {
+  height: 8.5rem;
+  margin-bottom: 0;
+}
+
+.survey {                   /******MOBILE******/
+  list-style-type: disc;
 }
 
 
 /******COMPETITORS******/
-.competitor {           /******MOBILE******/
-  margin-bottom: 0;
-}
-
 .analysis {
   display: grid;
   grid-gap: 3rem;
@@ -324,26 +354,36 @@ h5 {
   margin-bottom: 1rem;
 }
 
-.takeaway1 ul {
+.takeaway1 {
+  margin: 2.2rem auto 0 auto;
+  padding-top: 0;       /******MOBILE******/
   text-align: left;
 }
-/******PERSONAS******/
-.personas {
-  margin-bottom: 0;
+
+.takeaway1 p, .takeaway1 ul {
+  padding-top: 1.1rem;
 }
 
+.takeaway1 ul li {
+  list-style: disc outside;
+}
+
+.button {
+  font-size: 1.8rem;  /******MOBILE******/
+  padding: 1.5rem 3rem;
+}
+/******PERSONAS******/
 .col {
   display: grid;
   grid-template-columns: 1fr;
-  margin: 2.2rem auto;
+  margin: 2.2rem auto 0 auto;        /******MOBILE******/
   text-align: left;
   width: 100%;
 }
 
 .persona1, .persona2, .persona3 {
   border: 1px solid black;
-  line-height: .5cm;
-  padding: 4.3rem;
+  padding: 4.3rem;          /******MOBILE******/
 
 }
 
@@ -352,16 +392,10 @@ h5 {
 }
 
 .avatar1, .avatar2, .avatar3 {
-    background-repeat: no-repeat;
-    background-size: contain;
     border-radius: 50%;
     height: 13rem;
     margin: 0 auto;
     width: 13rem;
-  }
-
-  .avatar3 {
-    background: url(../images/sean.jpg);
   }
 
 .col ul li {
@@ -369,39 +403,128 @@ h5 {
 }
 
 .name, .quote {
-  font-weight: 900;
+  font-weight: 900;           /******MOBILE******/
   text-align: center;
 }
 
 .name {
-  font-size: 2.4rem;
+  font-size: 2.4rem;        /******MOBILE******/
   margin-top: 2rem;
 }
 
 .quote {
-  color: #00C853;
+  color: #00C853;         /******MOBILE******/
   margin: 1rem auto;
 }
 
-/******VISUAL DESIGN******/
-.visualDesign {
-  text-align: center;
+/******USER FLOWS******/
+.extend {
+  background: url('../images/sharing.png');
+  margin-bottom: 2.2rem;
+  padding: 12rem 0;
+}
+
+.hover-content {
+  background-color: #fff;
+  border-radius: .5rem;
+  padding: 2.2rem 3.8rem;   /******MOBILE*****/
+}
+
+/******SKETCHES******/
+.mockupSketches {         /******MOBILE*****/
+  background: url('../images/sketches.jpg');
+}
+
+.digitalSketches {                /******MOBILE*****/
+  background: url('../images/digitalSketches.png');
+}
+
+.mockupSketches, .digitalSketches {
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 17.3rem 0;     /******MOBILE*****/
 }
 
 /******USABILITY TESTS******/
+.usabilityTests h6 {
+  padding-top: 3.3rem;
+}
 
+.usabilityTests ul{
+  list-style-type: disc;
+}
+
+/******LOGO SKETCHES MINDMAPPING******/
+.mindMapping {
+  background: url('../images/mindmapping.jpg') no-repeat;
+  background-size: cover;
+  padding: 17.3rem 0;     /******MOBILE*****/
+}
+
+/******STYLE GUIDE******/
+.styleGuide img, .v2 img{
+  height: 50rem;            /******MOBILE******/
+  width: 100%;
+}
+
+.styleGruide img {
+  border: 1px solid black;
+}
+
+/******HIFI1******/
+.hifi1 {
+  background: url('../images/hifiv1.png') no-repeat;
+  background-size: cover;       /******MOBILE******/
+  padding: 17.3rem 0;
+}
+
+/******2nd ITERATION******/
+.secondIteration ul {
+  list-style: disc outside;
+}
+
+.v2, .v3, .finish, .added {
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 100%;
+}
+
+.v2 img, .v3 img {
+  width: 100%;
+}
+
+.v2 img {
+  height: 50rem;            /******MOBILE******/
+}
+
+.final {
+  padding-top: 0;
+}
+
+.finish img, .added img, .finish {
+  margin: 0 auto;
+  width: 80%;
+}
+
+.added {
+  width: 100%;
+}
+
+.book {
+  text-align: center;
+}
 
 /******FOOTER******/
 footer {
   background-color: #212121;
   color: #FFFFFF;
   font-family: Raleway;   /******MOBILE******/
-  margin-bottom: 0;
   padding: 2rem;
 }
 
 .footer-content {
   margin: auto;
+  padding: 0;
   text-align: center; /******MOBILE******/
 }
 
@@ -430,16 +553,22 @@ footer ul li {
   font-size: 1.8rem;
   }
 
-  .nav-content, .grid2, .grid3 {
-    display: grid;
-    grid-template-columns: 3fr 6fr 3fr;
-    width: 80%;
+  .nav-bar, .grid1, .grid2, .hover-box, .grid4 {
+    width: 90%;
   }
 
-   .grid3 {
+  hr {                                    /******TABLET******/
+    margin-bottom: 5.35rem;
+  }
+
+   .grid2, .hover-box, .grid4 {
     display: grid;
     grid-template-columns: 3fr 6fr 3fr;  /******TABLET******/
-     grid-template-areas:
+  }
+
+    .grid2 {
+    grid-template-areas:
+    ".                nav-bar           ."
     ".                whatIs            ."
     ".                overview          ."
     "probsol          probsol           probsol"
@@ -447,12 +576,10 @@ footer ul li {
     "phases           phases            phases"
     ".                discRe            ."
     "competitors      competitors       competitors"
-    ".                takeaway1          ."
-    "personas         personas          personas"
-    ".                takeaway2          ."
+    ".                takeaway1         ."
+    "personas         personas          personas"   /******TABLET******/
+    ".                takeaway2         ."
     ".                userStories       ."        /******TABLET******/
-    "userFlows        userFlows         userFlows"
-    ".                visualDesign      ."
     "mockups          mockups           mockups"
     ".                usabilityTests    ."
     ".                logoSketches      ."
@@ -465,36 +592,47 @@ footer ul li {
     ".                secondIteration   ."
     ".                thirdIteration    ."
     ".                usabilityTests2   ."
+    "final-title     final-title      final-title"
     ".                final             ."
+    ".                added             ."
     ".                lesson            .";
      padding: 0;
   }
 
   section {
-    margin-bottom: 5.35rem;
-}
-
-h3 {
-  font-size: 3rem;    /******TABLET******/
-  margin-bottom: 4.4rem;
-}
-
-h4 {
-  font-size: 2.6rem;    /******TABLET******/
-  margin-bottom: 4.4rem;
-}
-
-  h5 {
-    font-size: 2.6rem;
+    padding-bottom: 5.35rem;
+    padding-top: 5.35rem;                   /******TABLET******/
   }
 
-h6 {
-  font-size: 1.8rem;
-}
+  .competitors, .personas, .userStories {
+    padding-top: 5.35rem;
+  }
+
+  .probsol, .takeaway1, .download-style {
+    padding-bottom: 5.35rem;
+  }
+
+
+  h2 {
+    font-size: 3rem;    /******TABLET******/
+    margin-bottom: 4.4rem;
+  }
+
+  h3 {
+    font-size: 2.6rem;    /******TABLET******/
+    margin-bottom: 4.4rem;
+  }
+
+  h4 {
+     font-size: 2.4rem;
+   }
+
+  h6 {
+    font-size: 1.8rem;
+  }
 /******NAVBAR******/
-.nav-content {
-  margin: 0 auto;
-  width: 80%;
+.nav-bar {
+  grid-area: nav-bar;
 }
 
 nav ul li {
@@ -503,11 +641,10 @@ nav ul li {
 
 
   /******HERO******/
-  .grid2 {
+  .grid1 {
     display: grid;            /******TABLET******/
-    grid-gap: rem;
     grid-template-columns: 2fr 1fr;
-    padding: 8.5rem 0;
+    padding-top: 8.5rem;
   }
 
   .right-content {            /******TABLET******/
@@ -516,12 +653,13 @@ nav ul li {
   }
 
   .summary {
-    line-height: 1.5cm;
+    line-height: 1.7cm
   }
 
   .button {
-    font-size: 1.8rem;  /******TABLET******/
+    font-size: 2rem;  /******TABLET******/
     padding: 1.5rem 3rem;
+    width: 26rem;
   }
 
    /******WHAT IS SECTION*****/
@@ -530,7 +668,6 @@ nav ul li {
     }
 
     .rolesTools {
-      line-height: .7cm;
       margin: 4.3rem auto 0 auto;
     }
 
@@ -540,16 +677,20 @@ nav ul li {
   }
 
   .probsol {
-    border: 1px solid black;
+    /*****border: 1px solid black;******/
     display: grid;                /******TABLET******/
     grid-area: probsol;
-    grid-gap: 1rem;
+    grid-gap 1rem;
     grid-template-columns: 1fr 1fr;
   }
 
   .probsol1, .probsol2, .probsol3 {
-    border: 1px solid black;          /******TABLET******/
+    /******border: 1px solid black;          TABLET******/
     margin-top: 3rem;
+  }
+
+  .probsol1 ul, .probsol2 ul, .probsol3 ul {
+    margin: 10rem 0;
   }
 
   .solscr {
@@ -576,13 +717,18 @@ nav ul li {
   /******PHASES PROCESS******/
   .theProcess {
     grid-area: theProcess;      /******TABLET******/
-    margin-bottom: 0;
   }
 
   .phases {
     grid-area: phases;
     grid-template-columns: 1fr 1fr ;
     margin-bottom: 5.35rem;
+    padding-top: 0;
+    width: 100%;
+  }
+
+  .title {
+    height: 5rem;           /******MOBILE******/
   }
 
   /******USER SURVEY******/
@@ -590,13 +736,17 @@ nav ul li {
     grid-area: discRe;
   }
 
-  .data {
-    margin: 4.3rem auto;            /******TABLET******/
+  .data-content {
+    border: 1px solid black;
+    height:;               /******TABLET******/
+  }
+
+  .last {
+    height: 8.5rem;
   }
 
   .competitors {
     grid-area: competitors;     /******TABLET******/
-    margin-bottom: 0;
   }
 
   /******COMPETITORS******/
@@ -621,12 +771,11 @@ nav ul li {
   .col {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    margin: 4.6rem auto;
+    margin: 4.6rem auto 0 auto;
     width: 100%;
   }
 
   .persona1, .persona2, .persona3 {
-    line-height: .8cm;
     padding: 4.3rem;
   }
 
@@ -651,16 +800,35 @@ nav ul li {
     grid-area: userStories;     /******TABLET******/
   }
 
-  .userFlows {
-    grid-area: userFlows;
+  /******USER FLOWS******/
+  .extend, .mindMapping, .hifi1 {
+    padding: 18rem 0;                     /******TABLET******/
   }
 
-  .visualDesign {
-    grid-area: visualDesign;    /******TABLET******/
+    .extend {
+      margin-bottom: 5.35rem;
+    }
+
+   .hover-box {
+     grid-template-areas: ".      hoverContent      .";
+   }
+
+   .hover-content {
+     padding: 4rem 3.8rem;          /******TABLET******/
+     grid-area: hoverContent;
+   }
+
+/******VISUAL DESIGN******/
+  .grid4 {
+    grid-template-areas: ".      grid4Content      .";
   }
 
-  .mockups {
-    grid-area: mockups;
+  .grid4-content {
+    grid-area: grid4Content;
+  }
+
+  .mockupSketches, .digitalSketches {
+    padding: 18rem 0;
   }
 
   .usabilityTests {
@@ -679,16 +847,27 @@ nav ul li {
     grid-area: brandingID;
   }
 
+  /******STYLE GUIDE******/
   .style {
     grid-area: style;       /******TABLET******/
   }
 
-  .hifi {
-    grid-area: hifi;
+  .styleGuide {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 90%;
   }
 
-  .figma {
-    grid-area: figma;         /******TABLET******/
+  .styleGuide img, .v2 img{
+    height: 40rem;
+  }
+
+  .styleGuide img {
+    width: 5;
+  }
+
+  .hifi {
+    grid-area: hifi;    /******TABLET******/
   }
 
   .testings {
@@ -699,8 +878,21 @@ nav ul li {
     grid-area: secondIteration; /******TABLET******/
   }
 
+  .v2 {
+    margin: 0 auto;
+  }
+
+  .v2 img {
+    height: 46.3rem;          /******TABLET******/
+  }
+
   .thirdIteration {
     grid-area: thirdIteration;
+  }
+
+   /******3rd ITERATION******/
+  .v3, .finish {
+    grid-template-columns: 1fr 1fr;
   }
 
   .usabilityTests2 {
@@ -711,10 +903,33 @@ nav ul li {
     grid-area: final;
   }
 
+  .finish {
+    border: 1px solid black;
+    grid-area: finish;    /******TABLET******/
+  }
+
+  .finish1, .finish2 {
+    border: 1px solid black;
+  }
+
+
+  .added {
+    grid-area: added;
+    margin: 0 auto;     /******TABLET******/
+    width: 80%;
+  }
+
   .lesson {
     grid-area: lesson;
   }
 
+  .final-title {
+    grid-area: final-title;
+    padding-bottom: 0;
+  }
+
+  .book img {
+  }
 
   /******FOOTER******/
   .footer-content {     /******TABLET******/
@@ -726,19 +941,46 @@ nav ul li {
 @media screen and (min-width: 1000px) {
   /****************HERO****************/
 
+  .nav-bar, .grid1, .grid2, .hover-box, .grid4 {
+    width: 80%;
+  }
+
   /******PHASES PROCESS******/
   .phases {
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 
-  .phase1, .phase2, .phase3, .phase4 {
-    padding: 3rem;
+  .phase1, .phase2, .phase3, .phase4 {        /******DESKTOP******/
+    padding: 3rem 4rem;
   }
 
+  .phase1 ul, .phase2 ul, .phase3 ul {
+  }
+
+  /******SURVEY******/
+  .data-content {
+  }
+
+  .last {
+    height: 6.2rem;       /******DESKTOP******/
+    margin-bottom: 0;
+  }
+
+  .title {
+    height: 7.2rem;           /******DESKTOP******/
+  }
   /******PERSONAS******/
   .personas {
     grid-area: personas;
   }
 
+  .styleGuide {
+    width: 70%;         /******DESKTOP******/
+  }
+
+  /******2nd ITERATION******/
+  .v2 {
+    grid-template-columns: 1fr 1fr;
+  }
 
 }

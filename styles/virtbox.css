@@ -495,7 +495,7 @@ h4 {
 
 /******STYLE GUIDE******/
 .styleGuide img, .v2 img{
-  height: 50rem;            /******MOBILE******/
+  height: auto;            /******MOBILE******/
   width: 100%;
 }
 
@@ -518,15 +518,14 @@ h4 {
 .v2, .v3, .finish, .added {
   display: grid;
   grid-template-columns: 1fr;
-  width: 100%;
 }
 
-.v2 img, .v3 img {
+.v2 img, .v3 img, .v2, .v3, .finish, .added  {
   width: 100%;
 }
 
 .v2 img {
-  height: 50rem;            /******MOBILE******/
+  height: auto;            /******MOBILE******/
 }
 
 .final {
@@ -856,14 +855,6 @@ nav ul li {
     width: 90%;
   }
 
-  .styleGuide img, .v2 img{
-    height: 40rem;
-  }
-
-  .styleGuide img {
-    width: 5;
-  }
-
   .hifi {
     grid-area: hifi;    /******TABLET******/
   }
@@ -878,10 +869,6 @@ nav ul li {
 
   .v2 {
     margin: 0 auto;
-  }
-
-  .v2 img {
-    height: 46.3rem;          /******TABLET******/
   }
 
   .thirdIteration {

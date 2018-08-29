@@ -21,7 +21,7 @@ main {
   width: 100%;
 }
 
-.nav-bar, .grid1, .grid2, .hover-box, .grid4, .styleGuide, .probsol {
+ .grid1, .grid2, .hover-box, .grid4, .styleGuide, .probsol {
   /******border: 1px solid black; ****/
   display: grid;              /******MOBILE******/
   grid-template-columns: 1fr;
@@ -114,44 +114,160 @@ hr {
   padding-bottom: 0;
 }
 /******NAVBAR******/
-nav {
-  background-color: white;
-  display: inline-block;      /******MOBILE******/
-  font-family: Raleway;
+.nav-bar {
+  background: pink;
+  margin: 0 auto;
+  padding: 0;
+  width: 80%;
+}
+#work {
+  background-color: #fff;
+  color: #5A4859;
+  font-size: 2.5rem;
+  font-family: "Raleway", sans-serif;
+  width: 300px;
+  text-align: center;
   padding: 1rem;
 }
 
-nav a {
-  color: black;
-  text-decoration: none;
-}
-
-nav img {
+.logo {
   display: inline-block;
-  float: left;
-  padding: 1rem;
-  width: 8rem;
 }
 
-nav ul {                  /******MOBILE******/
-  float: right;
+.logo img {
+  float: left;
+  width: 6rem;
+}
+
+nav, nav ul li{
+  display: inline-block;
+}
+
+nav ul {
 }
 
 nav ul li {
-  display: inline-block;
-  font-family: Raleway;
-  font-size: 1.4rem;
-  font-weight: 900;           /******MOBILE******/
-  list-style: none;
-  padding: 2.2rem;
-  text-transform: uppercase;
+  margin: 0 2rem;
+  text-decoration: none;
 }
 
-nav ul li a:hover {
-  color: #ED2F80;
+/*drop down menu*/
+@import url(https://fonts.googleapis.com/css?family=Latos:400,300,700,900);
+
+.navigation {
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    transition: all 0.4s ease-in-out;
+    padding-top: 0px;
+}
+
+.navigation a {
+    text-decoration: none;
+}
+
+.navigation ul {
+    margin-top:20px;
+    text-align:center;
+    list-style:none;
+    margin-left:auto;
+    margin-right:auto;
 }
 
 
+.menulist {
+    width:200px;
+}
+
+
+.logo {
+    text-align:center;
+    margin:0 auto;
+}
+
+.line1, .line2, .line3 {
+  margin-top:5px;
+  background-color:#fff;
+  width:25px;
+  height:3px;
+  display:block;
+  position:relative;
+  opacity:1.0;
+  border-radius:15%;
+  transition: all .3s;
+}
+
+.line1.active {
+  transform: rotate(270deg);
+  opacity:0.0;
+  background-color:yellow;
+  top:5px;
+}
+
+.line2.active {
+  transform: rotate(45deg);
+  background-color:yellow;
+}
+
+.line3.active {
+  transform: rotate(-45deg);
+  background-color:yellow;
+  top:-7px;
+}
+
+.menuitems {
+    padding-top:12px;
+    padding-bottom:12px;
+    text-decoration: none;
+    list-style:none;
+    font-family: "Latos", sans-serif;
+    font-weight: 300;
+    font-size: 2rem;
+    display: inline-block;
+    position:relative;
+    text-align:center;
+    color: #fff;
+    opacity:0.0;
+    transition: all .5s ease-in-out;
+}
+
+.menuitems:after {
+  content:'';
+  display:block;
+  width: 0;
+  height: 1px;
+  background: #fff;
+  transition: width .2s;
+}
+
+.menuitems:hover::after {
+    width:100%;
+}
+
+#closebtn {
+    height:25px;
+    width:25px;
+    position: absolute;
+    text-decoration:none;
+    top: 25px;
+    right: 25px;
+    font-size: 2rem !important;
+    margin-right: 50px;
+    z-index:100;
+    color:#fff;
+    cursor:pointer;
+    trainsition:background-position .3s;
+}
+
+#main {
+    transition: margin-top .4s;
+    text-align:center;
+    margin: auto;
+    font-size: 2rem;
+}
 /******HERO******/
 .hero-background {
   background: linear-gradient(rgba(	33, 212, 253, 0.6),rgba(59, 88, 252, 0.6)),
@@ -611,7 +727,6 @@ footer ul li {
 
     .grid2 {
     grid-template-areas:
-    ".                nav-bar           ."
     ".                whatIs            ."
     ".                overview          ."
     "probsol          probsol           probsol"
@@ -674,9 +789,7 @@ footer ul li {
     font-size: 1.8rem;
   }
 /******NAVBAR******/
-.nav-bar {
-  grid-area: nav-bar;
-}
+
 
 nav ul li {
   font-size: 1.8rem;     /******TABLET******/

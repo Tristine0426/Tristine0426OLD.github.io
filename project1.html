@@ -15,16 +15,36 @@
 </head>
   <body>
     <header>
-      <!-- nav bar -->
-      <nav class="nav-bar"><!-- background -->
-        <div>
-          <a href="index.html"><img src="../images/logo.PNG" alt="logo" class="logo"></a>
-          <ul>
-            <li><a href="project1.html">Projects</a></li>
-            <li><a href="about.html">About</a></li>
-          </ul>
-        </div>
-      </nav>
+      <section class="nav-bar">
+        <!-- nav bar -->
+        <div class="logo">
+            <a href="index.html"><img src="../images/logo.png" alt="logo"></a>
+          </div>
+        <!--Desktop Menu-->
+          <nav>
+            <ul>
+              <li><a href="index.html">PROJECTS</a></li>
+              <li><a href="about.html#work">ABOUT</a></li>
+            </ul>
+          </nav>
+
+        <!--Mobile Menu-->
+          <div id="topNav" class="navigation">
+            <span id="closebtn" onclick="navToggle()">
+            <span class="line1"></span>
+            <span class="line2"></span>
+            <span class="line3"></span>
+            </span>
+            <div class="logo">
+              <img src=""/>
+            </div>
+            <ul class="menulist">
+              <li><a class="menuitems" href="index.html">PROJECTS</a></li>
+              <li><a class="menuitems" href="about.html">ABOUT</a></li>
+            </ul>
+          </div>
+          <div id="main"></div>
+      </section>
       <!-- hero unit -->
       <section class="hero-background">
           <ul class="grid1">

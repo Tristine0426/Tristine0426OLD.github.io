@@ -12,6 +12,10 @@ body {
   font-size: 1.6rem;
 }
 
+main {
+  margin-bottom: 8rem;
+}
+
 .grid-bg {
   background-color: #F9F9F9;
   width: 100%;
@@ -39,7 +43,7 @@ section {
   padding-top: 2.2rem;
 }
 
-.probsol, .competitors, .personas, .takeaway1, .userStories, .visualDesign, .styleGuide, .v2, .v3, .finish, .added {
+.probsol, .probsol2-sm, .competitors, .personas, .takeaway1, .userStories, .visualDesign, .styleGuide, .v2, .v3, .finish, .added {
  padding: 0;
 }
 
@@ -51,7 +55,7 @@ section {
   padding-bottom: 2.2rem;
 }
 
-h2, h3 {
+h2, h3, h4 {
   font-family: Montserrat;
   font-weight: bold;
   line-height: .8cm;
@@ -72,6 +76,8 @@ h3 {
 
 h4 {
   font-size: 2.2rem;
+  font-weight: 900;
+  margin-bottom: 0rem;            /******MOBILE******/
 }
 
 h6 {
@@ -235,7 +241,6 @@ nav ul li a:hover {
 
 /******overview******/
 .probsol {
-  border: 1px solid black;
   display: grid;                   /******MOBILE******/
   grid-template-columns: 1fr;
 }
@@ -245,17 +250,16 @@ nav ul li a:hover {
 }
 
 .solscr {
+  margin: 1rem auto;
   width: 100%;
 }
 
 .probsol ul li {
-  border: 1px solid black;
   line-height: .6cm;
   margin: auto auto auto 0;
 }
 
 .probsol1, .probsol1-g2, .probsol2, .probsol2-g2, .probsol3, .probsol3-g2 {          /******MOBILE******/
-  border: 1px solid black;
   display: grid;
   grid-template-columns: 1fr 9fr;
   list-style-type: none;
@@ -264,6 +268,18 @@ nav ul li a:hover {
 
 .probsol1-g2, .probsol2-g2, .probsol3-g2 {
   margin-top: 1rem;
+}
+
+.probsol2 {
+  margin-top: 4rem;
+}
+
+.lg {
+  display: none;            /******MOBILE******/
+}
+
+.scr2 {
+  margin-bottom: 4rem;
 }
 
 .prob {
@@ -278,7 +294,6 @@ nav ul li a:hover {
   width: 3.6rem;
 }
 
-
 .bold-prob {
   color: #EB5757;       /******MOBILE******/
 }
@@ -290,7 +305,7 @@ nav ul li a:hover {
 .phases {
   background-color: #F9F9F9;
   display: grid;
-  grid-gap: 1.5rem;
+  grid-gap: 2rem;
   grid-template-columns: 1fr;   /******MOBILE******/
   margin: 0 auto;
   padding-top: 0;
@@ -325,25 +340,18 @@ nav ul li a:hover {
 }
 
 .title {
-  border: 1px solid black;
   height: 7rem;           /******MOBILE******/
   margin: 2rem auto;
 }
 
 /******USER SURVEY******/
 .data {
-  border: 1px solid black;
   background-color: #D9DFFE;        /******MOBILE******/
   display: grid;
   grid-gap: 1rem;
   grid-template-columns: 1fr 1fr;
   margin: 2.2rem auto;
   padding: 3rem;
-}
-
-h4 {
-  font-weight: 900;
-  margin-bottom: 1rem;            /******MOBILE******/
 }
 
 .data ul li p{
@@ -353,7 +361,6 @@ h4 {
 }
 
 .data-content {
-  border: 1px solid black;
   height: 8.5rem;               /******MOBILE******/
   margin-bottom: 1rem;
   overflow: hidden;
@@ -414,13 +421,19 @@ h4 {
 }
 
 .persona1, .persona2, .persona3 {
-  border: 1px solid black;
   padding: 4.3rem;          /******MOBILE******/
-
 }
 
 .persona1, .persona3 {
   background-color: #FAFBFB;
+}
+
+.col, .persona1, .persona2, .persona3, .hover-content {
+  box-shadow: .2rem .5rem .5rem #D5D5D5;
+}
+
+.avatar {
+  text-align: center;
 }
 
 .avatar1, .avatar2, .avatar3 {
@@ -464,7 +477,7 @@ h4 {
 
 /******SKETCHES******/
 .mockupSketches {         /******MOBILE*****/
-  background: url('../images/sketches.jpg');
+  background: url('../images/sketches.png');
 }
 
 .digitalSketches {                /******MOBILE*****/
@@ -474,7 +487,7 @@ h4 {
 .mockupSketches, .digitalSketches {
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 17.3rem 0;     /******MOBILE*****/
+  padding: 15rem 0;     /******MOBILE*****/
 }
 
 /******USABILITY TESTS******/
@@ -500,7 +513,6 @@ h4 {
 }
 
 .styleGruide img {
-  border: 1px solid black;
 }
 
 /******HIFI1******/
@@ -734,8 +746,7 @@ nav ul li {
   }
 
   .data-content {
-    border: 1px solid black;
-    height:;               /******TABLET******/
+                  /******TABLET******/
   }
 
   .last {
@@ -766,10 +777,9 @@ nav ul li {
   }
 
   .col {
-    display: grid;
+    display: grid;        /******TABLET******/
     grid-template-columns: 1fr 1fr 1fr;
     margin: 4.6rem auto 0 auto;
-    width: 100%;
   }
 
   .persona1, .persona2, .persona3 {
@@ -777,8 +787,8 @@ nav ul li {
   }
 
   .avatar1, .avatar2, .avatar3 {
-      height: 15rem;
-      width: 15rem;
+    height: 15rem;
+    width: 15rem;
     }
 
   .name {
@@ -889,14 +899,8 @@ nav ul li {
   }
 
   .finish {
-    border: 1px solid black;
     grid-area: finish;    /******TABLET******/
   }
-
-  .finish1, .finish2 {
-    border: 1px solid black;
-  }
-
 
   .added {
     grid-area: added;
@@ -936,6 +940,25 @@ nav ul li {
     grid-area: probsol;
     grid-gap 1rem;
     grid-template-columns: 1fr 1fr;
+  }
+
+  .probsol2 {
+    margin: 0 auto auto 1rem;
+  }
+
+  .probsol2-g2 {
+    margin-left: 1rem;
+  }
+
+  .probsol2-sm {
+    display: none;            /******DESKTOP******/
+  }
+
+  .lg {
+    display: inline-block;
+  }
+
+  .scr2 {
   }
 
   .prob{

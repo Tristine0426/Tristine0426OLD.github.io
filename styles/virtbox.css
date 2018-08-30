@@ -614,6 +614,7 @@ footer {
   margin: auto;
   padding: 0;
   text-align: center; /******MOBILE******/
+  text-decoration: none;
 }
 
 .footer-content div {
@@ -630,6 +631,10 @@ footer ul {
 footer ul li {
   display: inline;    /******MOBILE******/
   padding: 1rem;
+}
+
+footer ul li a{
+  text-decoration: none;
 }
 
 .credit {

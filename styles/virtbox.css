@@ -365,7 +365,7 @@ nav ul li a:hover, .side-nav a:hover {
 .phase1, .phase2, .phase3, .phase4 {
   background-color: white;
   border-radius: 1rem;
-  padding: 5rem;              /******MOBILE******/
+  padding: 4rem;              /******MOBILE******/
 }
 
 .phase1 {
@@ -448,7 +448,7 @@ nav ul li a:hover, .side-nav a:hover {
   padding-top: 1.1rem;      /******MOBILE******/
 }
 
-.takeaway1 ul li {
+.takeaway1 ul li, .hifi ul li, .col ul li, .usabilityTests ul, .secondIteration ul {
   list-style: disc outside;
 }
 
@@ -487,10 +487,6 @@ nav ul li a:hover, .side-nav a:hover {
     margin: 0 auto;
     width: 13rem;
   }
-
-.col ul li {
-  list-style-type: disc;
-}
 
 .name, .quote {
   font-weight: 900;           /******MOBILE******/
@@ -540,10 +536,6 @@ nav ul li a:hover, .side-nav a:hover {
   padding-top: 3.3rem;
 }
 
-.usabilityTests ul{
-  list-style-type: disc;
-}
-
 /******LOGO SKETCHES MINDMAPPING******/
 .mindMapping {
   background: url('../images/mindmapping.jpg') no-repeat;
@@ -568,9 +560,6 @@ nav ul li a:hover, .side-nav a:hover {
 }
 
 /******2nd ITERATION******/
-.secondIteration ul {
-  list-style: disc outside;
-}
 
 .v2, .v3, .finish, .added {
   display: grid;
@@ -1025,10 +1014,7 @@ nav ul li {
   }
 
   .phase1, .phase2, .phase3, .phase4 {        /******DESKTOP******/
-    padding: 3rem 4rem;
-  }
-
-  .phase1 ul, .phase2 ul, .phase3 ul {
+    padding: 3rem;
   }
 
   /******SURVEY******/
@@ -1041,7 +1027,7 @@ nav ul li {
   }
 
   .title {
-    height: 7.2rem;           /******DESKTOP******/
+    height: 6rem;           /******DESKTOP******/
   }
   /******PERSONAS******/
   .personas {

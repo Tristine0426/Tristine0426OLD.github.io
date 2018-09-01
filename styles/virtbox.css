@@ -171,6 +171,7 @@ nav ul li a:hover, .side-nav a:hover {
   color: #fff;
   display: block;
   font-size: 1.8rem;
+  margin-right: 2.5rem;
   padding:  1rem 1rem 2rem 3rem;
   text-align: right;
   text-decoration: none;
@@ -180,7 +181,7 @@ nav ul li a:hover, .side-nav a:hover {
 .side-nav .btn-close {
   font-size: 5.6rem;
   position: absolute;
-  right: 2.2rem;
+  right: 0;
   top: 0;
 }
 
@@ -561,6 +562,16 @@ nav ul li a:hover, .side-nav a:hover {
   background: url('../images/hifiv1.png') no-repeat;
   background-size: cover;       /******MOBILE******/
   padding: 17.3rem 0;
+}
+
+.slides h4 {
+  margin-top: 2.2rem;
+}
+
+.slides p {
+  line-height: inherit;
+  margin: 2.2rem auto;
+  width: 60%;
 }
 
 .w3-content {

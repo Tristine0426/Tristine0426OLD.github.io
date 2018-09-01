@@ -43,7 +43,7 @@ section {
   padding-top: 2.2rem;
 }
 
-.probsol, .small, .competitors, .personas, .takeaway1, .userStories, .visualDesign, .styleGuide, .v2, .v3, .finish, .added, .preferenceTests, .slideShow {
+.probsol, .small, .competitors, .personas, .takeaway1, .userStories, .visualDesign, .styleGuide, .v2, .v3, .finish, .added, .slideShow {
  padding: 0;
 }
 
@@ -548,7 +548,7 @@ nav ul li a:hover, .side-nav a:hover {
 }
 
 /******STYLE GUIDE******/
-.styleGuide img, .v2 img, .preferenceTests img{
+.styleGuide img, .v2 img, .slides img{
   height: auto;            /******MOBILE******/
   width: 100%;
 }
@@ -563,18 +563,22 @@ nav ul li a:hover, .side-nav a:hover {
   padding: 17.3rem 0;
 }
 
+.w3-content {
+  display: none;
+}
+
 /******2nd ITERATION******/
 
-.v2, .v3, .finish, .added, .preferenceTests {
+.v2, .v3, .finish, .added, .slideShow {
   display: grid;
   grid-template-columns: 1fr;
 }
 
-.v2 img, .v3 img, .v2, .v3, .finish, .added, .preferenceTests, .preferenceTests img  {
+.v2 img, .v3 img, .v2, .v3, .finish, .added, .slideShow img {
   width: 100%;
 }
 
-.v2 img, .preferenceTests img {
+.v2 img, .slideShow img {
   height: auto;            /******MOBILE******/
 }
 
@@ -715,6 +719,7 @@ footer ul li a{
     ".                brandingID        ."
     ".                style             ."
     ".                hifi              ."
+    ".                TESTINGS          ."
     "figma            figma             figma"
     ".                testings          ."
     ".                secondIteration   ."
@@ -921,6 +926,7 @@ nav ul li {
 
   .logoSketches {
     grid-area: logoSketches;
+    padding-bottom: 2.2rem;
   }
 
   .mindMapping {
@@ -934,6 +940,7 @@ nav ul li {
   /******STYLE GUIDE******/
   .style {
     grid-area: style;       /******TABLET******/
+    padding-bottom: 2.2rem;
   }
 
   .styleGuide {
@@ -944,19 +951,39 @@ nav ul li {
 
   .hifi {
     grid-area: hifi;    /******TABLET******/
+    padding-bottom: 2.2rem;
   }
 
   .slideShow {
-    background: rgba(0,0,0,.5);
-    bottom: 0;
-    color: #fff;
-    font-size: 14px;
-    grid-area: slideShow;
-    left: 0;
-    line-height: 18px;
-    padding: 2%;
-    text-shadow: 0 -1px 0 rgba(0,0,0,.3);
-    width: 96%;
+    display: none;
+  }
+
+  .w3-content {
+    display: block;
+  }
+
+  .testings {
+    grid-area: testings;
+    padding-bottom: 2.2rem;
+  }
+
+  .mySlides {
+    background-color: #f9f9f9;
+    padding-bottom: 9rem;
+  }
+
+  .mySlides img {
+    width: 100%;
+  }
+
+  .mySlides h6 {
+    padding: 2.5rem 0;
+    text-align: center;
+  }
+
+  .mySlides p {
+    margin: 2.2rem auto;
+    width: 50%;
   }
 
   .testings {
@@ -965,6 +992,7 @@ nav ul li {
 
   .secondIteration {
     grid-area: secondIteration; /******TABLET******/
+    padding-bottom: 2.2rem;
   }
 
   .v2, .slideShow {
@@ -973,6 +1001,7 @@ nav ul li {
 
   .thirdIteration {
     grid-area: thirdIteration;
+    padding-bottom: 2.2rem;
   }
 
    /******3rd ITERATION******/
@@ -986,6 +1015,7 @@ nav ul li {
 
   .final {
     grid-area: final;
+    padding-bottom: 2.2rem;
   }
 
   .finish {

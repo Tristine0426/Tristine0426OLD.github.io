@@ -6,6 +6,7 @@
   <title>Portfolio | Tristine Nguyen</title>
   <link rel="stylesheet" href="styles/reset.css">
   <link rel="stylesheet" href="styles/virtbox.css">
+  <link rel="stylesheet" href="styles/w3.css">
   <!-- Google Fonts -->
   <link href='https://fonts.googleapis.com/css?family=Cabin' rel='stylesheet'>
   <link href="https://fonts.googleapis.com/css?family=Montserrat:700" rel="stylesheet">
@@ -564,6 +565,73 @@
              <!-- will insert slide deck here. not sure how. bootstrap? -->
              </section>
            </div>
+           <!-- display slideshow in mobile -->
+             <section class="slideShow">
+                <ul class="slides">
+                  <li>
+                    <img src="images/menuPreferenceA.png" alt="Menu preference A">
+                    <p>Adventurer Cheesecake Brownie</p>
+                  </li>
+                  <li>
+                    <img src="images/menuPreferenceB.png" alt="Menu preference B">
+                    <p class="flex-caption">Adventurer Lemon</p>
+                  </li>
+                  <li>
+                    <img src="images/addPreferenceA.png" alt="Add preference A">
+                    <p>Adventurer Donut</p>
+                  </li>
+                  <li>
+                    <img src="images/iconsPreferenceA.png" alt="Icons preference A">
+                    <p>Adventurer Caramel</p>
+                  </li>
+                  <li>
+                    <img src="images/iconsPreferenceB.png" alt="Icons preference B">
+                    <p>Adventurer Caramel</p>
+                  </li>
+                </ul>
+              </section>
+
+           <!-- display slideshow in TABLET -->
+           <div class="w3-content w3-display-container">
+
+             <div class="w3-content w3-display-container">
+
+              <article class="w3-display-container mySlides">
+                  <h6 class="w3-display-top">Laid out navigation menu vs collapsed navigation menu</h6>
+                   <img src="images/menuPreference.png">
+                     <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+                       <h4>72% picked option B</h4>
+                         <p>Since they were unable to view what entails under “categories”,
+                          they  had concerns of having to scroll down if the “categories” option is expanded.
+                          However, there were only 3 options under “categories”, which users will not have to worry about this concern.
+                          Thus, I decided to implement option A for the next iteration.</p>
+                     </div>
+              </article>
+              <article class="w3-display-container mySlides">
+                  <h6 class="w3-display-top">One button to add files vs 2 buttons to add files</h6>
+                   <img src="images/addPreference.png">
+                     <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+                       <h4>59% of users picked option B</h4>
+                         <p>This test was the hardest. Both options started off very even. Some stated they like the simplicity while
+                           others think it is less confusing to have 2 buttons. I decided to move on with option A to keep the interface clean.
+                           And to following the rule of progressive disclosure. If given more time, I would definitely perform more tests.
+                           This is one of those situations were what designers think is best might not be what the users want.</p>
+                     </div>
+              </article>
+              <article class="w3-display-container mySlides">
+                  <h6 class="w3-display-top">Icons vs non-icons</h6>
+                   <img src="images/iconsPreference.png">
+                     <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+                       <h4>100% users picked option B</h4>
+                         <p>Users stated the icons help them scan quickly through the navigation. I originally skipped the icons to keep things
+                           simple and I completely overlooked the important of icons. I decided to use option B to move forward.</p>
+                     </div>
+              </article>
+                <button class="w3-button w3-display-left w3-black" onclick="plusDivs(-1)">&#10094;</button>
+                <button class="w3-button w3-display-right w3-black" onclick="plusDivs(1)">&#10095;</button>
+            </div>
+          </div>
+
            <div class="grid2">
              <!-- 4.1: 2nd ITERATION -->
              <section class="secondIteration">
@@ -618,7 +686,6 @@
               <p>This iteration utilized the semi-final product with improvements made based on the feedback from the usability tests.
                    Most edits were made by adding colors to sections to make information stand out and easy to read.
                    Others were spell check and alignment check.</p>
-           <div class="addition"></div> <!-- need background image in css -->
          </section>
         </div>
          <section class="finish">

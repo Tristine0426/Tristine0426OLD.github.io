@@ -18,15 +18,31 @@
 <body>
   <header>
     <!-- nav bar -->
-    <nav><!-- background -->
-      <div class="nav-content">
-        <img src="/images/personalBrand.png" alt="logo" class="logo">
-        <ul>
-          <li><a href="project1.html">Projects</a></li>
-          <li><a href="about.html">About</a></li>
-        </ul>
+    <nav class="nav-bar"><!-- background -->
+      <div>
+        <a href="index.html"><img src="images/personalBrand.png"></a>
+            <span class="open-slide">
+              <a href="#" onclick="openSlideMenu()">
+                <svg width="30" height="30">
+                  <path d="M0,5 30,5" stroke="#000" stroke-width="5"/>
+                  <path d="M0,14 30,14" stroke="#000" stroke-width="5"/>
+                  <path d="M0,23 30,23" stroke="#000" stroke-width="5"/>
+                </svg>
+              </a>
+            </span>
+
+            <ul>
+              <li><a href="project1.html">PROJECTS</a></li>
+              <li><a href="about.html">ABOUT</a></li>
+            </ul>
       </div>
     </nav>
+
+      <div id="side-menu" class="side-nav">
+          <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+          <a href="index.html" class="portfolio">PROJECTS</a>
+          <a href="about.html">ABOUT</a>
+      </div>
     <!-- hero unit -->
     <section class="hero"> <!-- background -->
       <div class="grid1">
@@ -59,32 +75,33 @@
   </main>
   <footer> <!-- background -->
       <section class="footer-content"> <!-- to center content later -->
-        <div><h5>Like what you see?</h5></div>
-        <div><h5>Connect with me here!</h5></div>
+        <div>Like what you see?</div>
+        <div>Connect with me here!</div>
         <ul>
           <li>
             <a href="http://www.linkedin.com/in/tristine-nguyen" target="_blank">
-              <img src="/images/icons-logos/linkedin-button.svg" alt="linkedin icon" width="24" height="24">
+              <img src="images/iconsLogos/linkedinlogo.svg" alt="linkedin icon" width="24px" height="24px">
             </a>
           </li>
           <li>
             <a href="https://github.com/Tristine0426" target="_blank">
-              <img src="/images/icons-logos/github-logo.svg" alt="github icon" width="24" height="24">
+              <img src="images/iconsLogos/githublogo.svg" alt="github icon" width="24px" height="24px">
             </a>
           </li>
           <li>
             <a href="mailto:tristine@mail.usf.edu" target="_blank">
-              <img src="/images/icons-logos/envelope.svg" alt="email icon" width="24" height="24">
+              <img src="images/iconsLogos/email.svg" alt="email icon" width="24px" height="24px">
             </a>
           </li>
           <li>
             <a href="https://www.instagram.com/gurengazette26/" target="_blank">
-              <img src="/images/icons-logos/instagram.svg" alt="instagram icon" width="24" height="24">
+              <img src="images/iconsLogos/instalogo.svg" alt="instagram icon" width="24px" height="24px">
             </a>
           </li>
         </ul>
         <p class="credit">Code and Design by Tristine Nguyen</p>
       </section>
     </footer>
+    <script src="js/portfolio.js"></script>
   </body>
   </html>

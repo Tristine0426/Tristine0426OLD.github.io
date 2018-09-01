@@ -43,7 +43,7 @@ section {
   padding-top: 2.2rem;
 }
 
-.probsol, .probsol2-sm, .competitors, .personas, .takeaway1, .userStories, .visualDesign, .styleGuide, .v2, .v3, .finish, .added {
+.probsol, .small, .competitors, .personas, .takeaway1, .userStories, .visualDesign, .styleGuide, .v2, .v3, .finish, .added, .preferenceTests, .slideShow {
  padding: 0;
 }
 
@@ -139,7 +139,7 @@ nav ul {                  /******MOBILE******/
 nav ul li {
   display: inline-block;
   font-family: Raleway;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   font-weight: 900;           /******MOBILE******/
   list-style: none;
   padding: 2.2rem;
@@ -187,6 +187,7 @@ nav ul li a:hover, .side-nav a:hover {
 .portfolio {
   margin-top: 2rem;
 }
+
 @media(max-width: 568px){
   .nav-bar ul {
     display: none;
@@ -197,6 +198,7 @@ nav ul li a:hover, .side-nav a:hover {
     display: none;
   }
 }
+
 /******HERO******/
 .hero-background {
   background: linear-gradient(rgba(	33, 212, 253, 0.6),rgba(59, 88, 252, 0.6)),
@@ -327,6 +329,10 @@ nav ul li a:hover, .side-nav a:hover {
   margin-bottom: 4rem;
 }
 
+.sm {
+  margin-bottom: 4rem;
+}
+
 .prob {
   margin: auto auto auto 0;
 }
@@ -385,7 +391,7 @@ nav ul li a:hover, .side-nav a:hover {
 }
 
 .title {
-  height: 7rem;           /******MOBILE******/
+  height: 5rem;           /******MOBILE******/
   margin: 2rem auto;
 }
 
@@ -396,24 +402,20 @@ nav ul li a:hover, .side-nav a:hover {
   grid-gap: 1rem;
   grid-template-columns: 1fr 1fr;
   margin: 2.2rem auto;
-  padding: 3rem;
+  padding: 3rem 3rem 0 3rem;
+}
+
+.data ul li {
+  margin-bottom: 4.3rem;
 }
 
 .data ul li p{
-  height: 7rem;
        /******MOBILE******/
   text-align: center;
 }
 
 .data-content {
   height: 8.5rem;               /******MOBILE******/
-  margin-bottom: 1rem;
-  overflow: hidden;
-}
-
-.last {
-  height: 8.5rem;
-  margin-bottom: 0;
 }
 
 .survey {                   /******MOBILE******/
@@ -448,7 +450,7 @@ nav ul li a:hover, .side-nav a:hover {
   padding-top: 1.1rem;      /******MOBILE******/
 }
 
-.takeaway1 ul li, .hifi ul li, .col ul li, .usabilityTests ul, .secondIteration ul {
+.takeaway1 ul li, .hifi ul li, .col ul li, .usabilityTests ul, .secondIteration ul, .usabilityTests2 ul {
   list-style: disc outside;
 }
 
@@ -532,9 +534,10 @@ nav ul li a:hover, .side-nav a:hover {
 }
 
 /******USABILITY TESTS******/
-.usabilityTests h6 {
-  padding-top: 3.3rem;
+.usabilityTests h6, .hifi ul, .secondIteration ul, .usabilityTests2 h6{
+  margin-top: 2.2rem;
 }
+
 
 /******LOGO SKETCHES MINDMAPPING******/
 .mindMapping {
@@ -544,7 +547,7 @@ nav ul li a:hover, .side-nav a:hover {
 }
 
 /******STYLE GUIDE******/
-.styleGuide img, .v2 img{
+.styleGuide img, .v2 img, .preferenceTests img{
   height: auto;            /******MOBILE******/
   width: 100%;
 }
@@ -561,16 +564,16 @@ nav ul li a:hover, .side-nav a:hover {
 
 /******2nd ITERATION******/
 
-.v2, .v3, .finish, .added {
+.v2, .v3, .finish, .added, .preferenceTests {
   display: grid;
   grid-template-columns: 1fr;
 }
 
-.v2 img, .v3 img, .v2, .v3, .finish, .added  {
+.v2 img, .v3 img, .v2, .v3, .finish, .added, .preferenceTests, .preferenceTests img  {
   width: 100%;
 }
 
-.v2 img {
+.v2 img, .preferenceTests img {
   height: auto;            /******MOBILE******/
 }
 
@@ -629,6 +632,45 @@ footer ul li a{
 .credit {
   font-size: 1.3rem;    /******MOBILE******/
 }
+
+@media(min-width: 393px){
+  .data ul li {
+    margin-bottom: 0;
+  }
+
+  .data {
+    padding-bottom: 3rem;
+  }
+}
+
+@media(min-width: 450px){
+  .phases {
+    width: 70%;
+  }
+
+  .data {
+    padding: 3rem;
+  }
+
+}
+
+@media(min-width: 555px){
+  .data {
+    padding-bottom: 0;
+  }
+}
+
+@media(min-width: 610px){
+  .phases {
+    width: 50%;
+  }
+}
+
+@media(min-width: 792px){
+  .data ul li {
+    margin-bottom: 0;
+  }
+}
 /****************TABLET SIZE****************/
 @media screen and (min-width: 768px) {
   body {
@@ -674,7 +716,7 @@ footer ul li a{
     ".                secondIteration   ."
     ".                thirdIteration    ."
     ".                usabilityTests2   ."
-    "final-title     final-title      final-title"
+    "final-title     final-title        final-title"
     ".                final             ."
     ".                added             ."
     ".                lesson            .";
@@ -772,24 +814,20 @@ nav ul li {
     grid-template-columns: 1fr 1fr ;
     margin-bottom: 5.35rem;
     padding-top: 0;
-    width: 100%;
-  }
-
-  .title {
-    height: 5rem;           /******MOBILE******/
+    width: 80%;
   }
 
   /******USER SURVEY******/
   .discRe {
     grid-area: discRe;
   }
-
-  .data-content {
-                  /******TABLET******/
+  .data ul li {
+    margin-bottom: 4rem;
   }
 
   .last {
     height: 8.5rem;
+
   }
 
   .competitors {
@@ -847,8 +885,8 @@ nav ul li {
   }
 
   /******USER FLOWS******/
-  .extend, .mindMapping, .hifi1 {
-    padding: 18rem 0;                     /******TABLET******/
+  .extend, .mockupSketches, .digitalSketches, .mindMapping, .hifi1 {
+    padding: 22rem 0;                     /******TABLET******/
   }
 
     .extend {
@@ -871,10 +909,6 @@ nav ul li {
 
   .grid4-content {
     grid-area: grid4Content;
-  }
-
-  .mockupSketches, .digitalSketches {
-    padding: 18rem 0;
   }
 
   .usabilityTests {
@@ -908,6 +942,19 @@ nav ul li {
     grid-area: hifi;    /******TABLET******/
   }
 
+  .slideShow {
+    background: rgba(0,0,0,.5);
+    bottom: 0;
+    color: #fff;
+    font-size: 14px;
+    grid-area: slideShow;
+    left: 0;
+    line-height: 18px;
+    padding: 2%;
+    text-shadow: 0 -1px 0 rgba(0,0,0,.3);
+    width: 96%;
+  }
+
   .testings {
     grid-area: testings;
   }
@@ -916,7 +963,7 @@ nav ul li {
     grid-area: secondIteration; /******TABLET******/
   }
 
-  .v2 {
+  .v2, .slideShow {
     margin: 0 auto;
   }
 
@@ -964,6 +1011,10 @@ nav ul li {
     display: block;
   }
 
+  .footer-content div {
+    font-size: 2.4rem;
+  }
+
  }
 /****************DESKTOP****************/
 @media screen and (min-width: 1000px) {
@@ -974,7 +1025,6 @@ nav ul li {
   }
 
     .probsol {
-    /*****border: 1px solid black;******/
     display: grid;               /******DESKTOP******/
     grid-area: probsol;
     grid-gap 1rem;
@@ -989,7 +1039,7 @@ nav ul li {
     margin-left: 1rem;
   }
 
-  .probsol2-sm {
+  .small {
     display: none;            /******DESKTOP******/
   }
 
@@ -1009,26 +1059,16 @@ nav ul li {
   }
 
   /******PHASES PROCESS******/
-  .phases {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-  }
+
 
   .phase1, .phase2, .phase3, .phase4 {        /******DESKTOP******/
-    padding: 3rem;
-  }
-
-  /******SURVEY******/
-  .data-content {
+    padding: 3rem 3.5rem;
   }
 
   .last {
-    height: 6.2rem;       /******DESKTOP******/
     margin-bottom: 0;
   }
 
-  .title {
-    height: 6rem;           /******DESKTOP******/
-  }
   /******PERSONAS******/
   .personas {
     grid-area: personas;
@@ -1043,4 +1083,12 @@ nav ul li {
     grid-template-columns: 1fr 1fr;
   }
 
+}
+/****************DESKTOP****************/
+@media screen and (min-width: 1280px) {
+/******PHASES PROCESS******/
+  .phases {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 100%;
+  }
 }

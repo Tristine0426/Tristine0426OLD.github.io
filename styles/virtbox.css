@@ -308,6 +308,7 @@ nav ul li a:hover, .side-nav a:hover {
 
 .probsol1, .probsol1-g2, .probsol2, .probsol2-g2, .probsol3, .probsol3-g2 {          /******MOBILE******/
   display: grid;
+  grid-gap: 2rem;
   grid-template-columns: 1fr 9fr;
   list-style-type: none;
   text-align: left;
@@ -652,6 +653,9 @@ footer ul li a{
     padding: 3rem;
   }
 
+  .probsol1, .probsol1-g2, .probsol2, .probsol2-g2, .probsol3, .probsol3-g2 {
+    grid-gap: 0;
+  }
 }
 
 @media(min-width: 555px){
@@ -1024,11 +1028,15 @@ nav ul li {
     width: 80%;
   }
 
-    .probsol {
+  .probsol {
     display: grid;               /******DESKTOP******/
     grid-area: probsol;
     grid-gap 1rem;
     grid-template-columns: 1fr 1fr;
+  }
+
+  .probsol1, .probsol1-g2, .probsol2, .probsol2-g2, .probsol3, .probsol3-g2 {          /******MOBILE******/
+    grid-gap: 1rem;
   }
 
   .probsol2 {

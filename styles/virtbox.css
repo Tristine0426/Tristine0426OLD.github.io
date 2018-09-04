@@ -526,7 +526,7 @@ nav ul li a:hover, .side-nav a:hover {
 
 /******SKETCHES******/
 .mockupSketches {         /******MOBILE*****/
-  background: url('../images/sketches.png');
+  background: url('../images/sketches.jpg');
 }
 
 .digitalSketches {                /******MOBILE*****/
@@ -547,7 +547,7 @@ nav ul li a:hover, .side-nav a:hover {
 
 /******LOGO SKETCHES MINDMAPPING******/
 .mindMapping {
-  background: url('../images/mindmapping.jpg') no-repeat;
+  background: url('../images/mindmapping.png') no-repeat;
   background-size: cover;
   padding: 17.3rem 0;     /******MOBILE*****/
 }

@@ -373,7 +373,10 @@ nav ul li a:hover, .side-nav a:hover {
 .phase1, .phase2, .phase3, .phase4 {
   background-color: white;
   border-radius: 1rem;
-  padding: 4rem;              /******MOBILE******/
+}
+
+.phase1 ul, .phase2 ul, .phase3 ul, .phase4 ul {
+  margin: 0 auto 4rem 6rem;
 }
 
 .phase1 {
@@ -393,6 +396,7 @@ nav ul li a:hover, .side-nav a:hover {
 }
 
 .title {
+  border: 1px solid black;
   height: 5rem;           /******MOBILE******/
   margin: 2rem auto;
 }
@@ -823,6 +827,7 @@ nav ul li {
 /******overview******/
     .overview {
     grid-area: overview;
+    padding-bottom: 2.2rem;
   }
 
   .probsol {
@@ -839,7 +844,11 @@ nav ul li {
     grid-template-columns: 1fr 1fr ;
     margin-bottom: 5.35rem;
     padding-top: 0;
-    width: 80%;
+    width: 70%;
+  }
+
+  .phase1 ul, .phase2 ul, .phase3 ul, .phase4 ul {
+    margin-left: 5rem;
   }
 
   /******USER SURVEY******/
@@ -861,7 +870,7 @@ nav ul li {
 
   /******COMPETITORS******/
   .analysis {
-    grid-gap: 1rem;             /******TABLET******/
+    grid-gap: 2.2rem;             /******TABLET******/
     grid-template-columns: 1fr 1fr 1fr;
     margin: 0 auto;
   }
@@ -881,7 +890,6 @@ nav ul li {
   .col {
     display: grid;        /******TABLET******/
     grid-template-columns: 1fr 1fr 1fr;
-    margin: 4.6rem auto 0 auto;
   }
 
   .persona1, .persona2, .persona3 {
@@ -1114,11 +1122,6 @@ nav ul li {
 
   /******PHASES PROCESS******/
 
-
-  .phase1, .phase2, .phase3, .phase4 {        /******DESKTOP******/
-    padding: 3rem 3.5rem;
-  }
-
   .last {
     margin-bottom: 0;
   }
@@ -1139,10 +1142,14 @@ nav ul li {
 
 }
 /****************DESKTOP****************/
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1285px) {
 /******PHASES PROCESS******/
   .phases {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     width: 100%;
+  }
+
+  .last {
+    height: 6rem;
   }
 }

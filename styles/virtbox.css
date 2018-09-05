@@ -404,6 +404,10 @@ nav ul li a:hover, .side-nav a:hover {
 }
 
 /******USER SURVEY******/
+.break {
+  margin-top: 2.2rem;
+}
+
 .data {
   background-color: #D9DFFE;        /******MOBILE******/
   display: grid;
@@ -567,12 +571,14 @@ nav ul li a:hover, .side-nav a:hover {
 }
 
 /******STYLE GUIDE******/
+.style a {
+  color: #ED2F80;
+}
+
+
 .styleGuide img, .v2 img, .slides img{
   height: auto;            /******MOBILE******/
   width: 100%;
-}
-
-.styleGruide img {
 }
 
 /******HIFI1******/
@@ -875,6 +881,7 @@ nav ul li {
 
   .phase1 ul, .phase2 ul, .phase3 ul, .phase4 ul {
     margin-left: 5rem;
+    margin-bottom: 3rem;
   }
 
   /******USER SURVEY******/
@@ -962,6 +969,7 @@ nav ul li {
    .hover-content {
      padding: 4rem 3.8rem;          /******TABLET******/
      grid-area: hoverContent;
+     text-align: center;
    }
 
 /******VISUAL DESIGN******/

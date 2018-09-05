@@ -19,6 +19,7 @@ main {
 .grid-bg {
   background-color: #F9F9F9;
   width: 100%;
+  z-index: 0;
 }
 
 .nav-bar, .grid1, .grid2, .hover-box, .grid4, .styleGuide, .probsol {
@@ -110,7 +111,7 @@ hr {
   width: 10rem;
 }
 
-.last, .competitors, .personas, footer, .theProcess, .visualDesign, .mindMapping, .final-title h3 {
+.last, .competitors, .personas, .col, footer, .theProcess, .visualDesign, .mindMapping, .final-title h3 {
   padding-bottom: 0;
 }
 /******NAVBAR******/
@@ -216,6 +217,7 @@ nav ul li a:hover, .side-nav a:hover {
   grid-template-columns: 1fr;   /******MOBILE******/
   padding-bottom: 9.2rem;
   padding-top: 3.2rem;
+  z-index: 1;
 }
 
 .left-content {
@@ -263,7 +265,6 @@ nav ul li a:hover, .side-nav a:hover {
   z-index: 1;
 }
 
-
 .button:hover, #myBtn:hover {
   background-color: #fff;
   border: 2px solid #ED2F80;
@@ -271,6 +272,7 @@ nav ul li a:hover, .side-nav a:hover {
 }
 
 /******what is virtBox******/
+
 .rolesTools {
   display: grid;
   grid-gap: 1rem;
@@ -373,10 +375,11 @@ nav ul li a:hover, .side-nav a:hover {
 .phase1, .phase2, .phase3, .phase4 {
   background-color: white;
   border-radius: 1rem;
+  padding-top: 4rem;
 }
 
 .phase1 ul, .phase2 ul, .phase3 ul, .phase4 ul {
-  margin: 0 auto 4rem 6rem;
+  margin: auto 4rem 6rem;
 }
 
 .phase1 {
@@ -396,7 +399,6 @@ nav ul li a:hover, .side-nav a:hover {
 }
 
 .title {
-  border: 1px solid black;
   height: 5rem;           /******MOBILE******/
   margin: 2rem auto;
 }
@@ -468,9 +470,11 @@ nav ul li a:hover, .side-nav a:hover {
 .col {
   display: grid;
   grid-template-columns: 1fr;
+  line-height: .7cm;
   margin: 2.2rem auto 0 auto;        /******MOBILE******/
+  padding-top: 0;
   text-align: left;
-  width: 100%;
+  width: 90%;
 }
 
 .persona1, .persona2, .persona3 {
@@ -511,6 +515,16 @@ nav ul li a:hover, .side-nav a:hover {
   margin: 1rem auto;
 }
 
+.takeaway2 {
+  margin: 2.2rem auto;
+  padding: 0;
+  text-align: center;
+  width: 90%;
+}
+
+.takeaway2 h6 {
+  margin-bottom: 2.2rem;
+}
 /******USER FLOWS******/
 .extend {
   background: url('../images/sharing.png');
@@ -680,17 +694,29 @@ footer ul li a{
   .probsol1, .probsol1-g2, .probsol2, .probsol2-g2, .probsol3, .probsol3-g2 {
     grid-gap: 0;
   }
+
+  .col ul {
+    margin-left: 3rem;
+  }
 }
 
 @media(min-width: 555px){
   .data {
     padding-bottom: 0;
   }
+
+  .takeaway2 {
+    width: 60%;
+  }
 }
 
 @media(min-width: 610px){
   .phases {
     width: 50%;
+  }
+
+  .col {
+    width: 70%;
   }
 }
 
@@ -888,8 +914,7 @@ nav ul li {
   }
 
   .col {
-    display: grid;        /******TABLET******/
-    grid-template-columns: 1fr 1fr 1fr;
+    width: 60%;
   }
 
   .persona1, .persona2, .persona3 {
@@ -912,7 +937,11 @@ nav ul li {
 
   .takeaway2 {
     grid-area: takeaway2;
+    margin: 2.2rem auto 5.35rem auto;
+    text-align: center;
+    width: 50%;
   }
+
   .userStories {
     grid-area: userStories;     /******TABLET******/
   }
@@ -1074,6 +1103,13 @@ nav ul li {
   }
 
  }
+
+@media screen and (min-width: 900px) {
+  .col {
+    width: 50%;
+  }
+}
+
 /****************DESKTOP****************/
 @media screen and (min-width: 1000px) {
   /****************HERO****************/
@@ -1131,8 +1167,22 @@ nav ul li {
     grid-area: personas;
   }
 
+  .col {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 80%;
+  }
+
+  .col ul {
+    margin-left: 1rem;
+  }
+
+  .takeaway2 {
+    width: 35%;
+  }
+
   .styleGuide {
-    width: 70%;         /******DESKTOP******/
+    width: 70%;
   }
 
   /******2nd ITERATION******/
@@ -1152,4 +1202,5 @@ nav ul li {
   .last {
     height: 6rem;
   }
+
 }

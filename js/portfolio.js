@@ -88,7 +88,7 @@ function plusDivs(n) {
   showDivs(slideIndex += n);
 }
 
-// slideshows
+// slideshow
 function showDivs(n) {
   var i;
   var x = document.getElementsByClassName("mySlides");

@@ -12,32 +12,31 @@ body {
 }
 
 /******NAVBAR******/
-.nav-bar {
-        /******MOBILE******/
+nav {
+  display: grid;      /******MOBILE******/
   font-family: Raleway;
   margin: 0 auto;
-  padding: 1rem;
-  width: 90%;
+  padding: 1rem 0;
+
 }
 
-
-.nav-bar a {
+nav a {
   color: black;
   text-decoration: none;
 }
 
-.nav-bar img {
+nav img {
   display: inline-block;
   float: left;
   padding: 1rem;
   width: 8rem;
 }
 
-.nav-bar ul {                  /******MOBILE******/
+nav ul {                  /******MOBILE******/
   float: right;
 }
 
-.nav-bar ul li {
+nav ul li {
   display: inline-block;
   font-family: Raleway;
   font-size: 1.6rem;
@@ -46,7 +45,7 @@ body {
   padding: 2.2rem;
 }
 
-.nav-bar ul li a:hover, .side-nav a:hover {
+nav ul li a:hover, .side-nav a:hover {
   color: #ED2F80;
 }
 
@@ -72,6 +71,7 @@ body {
   color: #fff;
   display: block;
   font-size: 1.8rem;
+  margin-right: 2.5rem;
   padding:  1rem 1rem 2rem 3rem;
   text-align: right;
   text-decoration: none;
@@ -81,13 +81,14 @@ body {
 .side-nav .btn-close {
   font-size: 5.6rem;
   position: absolute;
-  right: 2.2rem;
+  right: 0;
   top: 0;
 }
 
 .portfolio {
   margin-top: 2rem;
 }
+
 @media(max-width: 568px){
   .nav-bar ul {
     display: none;
@@ -97,6 +98,8 @@ body {
   .open-slide, .side-nav {
     display: none;
   }
+}
+
 }
 /******HERO******/
 .hero {
@@ -114,15 +117,30 @@ body {
 }
 
 h1 {
-  font-size: 1.5rem;
+  font-size: 3.8rem;
   font-family: Montserrat;  /******MOBILE******/
-  line-height: 1.6;
-  text-align: center;
+  margin-bottom: 2.2rem;
+}
+
+.introduction {
+  margin: 4.3rem auto 0 0;
+}
+
+@media screen and (min-width: 500px) {
+  .introduction {
+    margin: 6.3rem auto 0 4.3rem;
+  }
 }
 
 h2 {
   font-family: alice;
+  font-size: 4rem;
   margin-bottom: 2.2rem;
+}
+
+h3 {
+  color: #616161;
+  font-size: 1.6rem;
 }
 
 .down-arrow {
@@ -137,27 +155,25 @@ h2 {
 
 .project1 {
   background: linear-gradient(to left, #3B58FC, #6d83fd);
+  padding: 7rem 0;
 }
 
-.grid1, .grid2 {
+nav, .grid1, .grid2 {
   display: grid;
-  grid-gap: none;
   grid-template-columns: 1fr; /******MOBILE******/
   list-style: none;
   margin: 0 auto;
-  width: 95%;
+  width: 90%;
 }
 
 .scr {
 background-repeat: no-repeat; /******MOBILE******/
-height: 100%;
-padding: 5rem 0;
 width: 100%;
 }
 
 .description-content {
   color: #fff;
-  margin: 0 auto 7rem auto;    /******MOBILE******/
+  margin: 0 auto 0 auto;    /******MOBILE******/
   text-align: center;
   width: 22rem;
 }
@@ -237,16 +253,21 @@ footer ul li a{
   }
 
   /******HERO******/
-  .hero {
-    padding-top: 12rem;     /******TABLET******/
-  }
 
   .grid1 {
     width: 80%;
   }
 
   h1 {
-    font-size: 2.6rem;    /******TABLET******/
+    font-size: 6.6rem;    /******TABLET******/
+  }
+
+  .introduction {
+    margin: 12rem auto 0 10rem;
+  }
+
+  h3 {
+    font-size: 2rem;
   }
 
   .down-arrow {
@@ -254,29 +275,21 @@ footer ul li a{
   }
 
   /******FOR ALL PROJECTS*****/
+  h2 {
+    font-size: 4.8rem;
+  }
+
   .container p {
   font-size: 2rem;
   }
 
   .grid2 {
-    grid-gap: 1rem;
-    grid-template-columns: 5fr 3fr;  /******TABLET******/
     margin: 0 auto;
     width: 80%;
   }
 
-  .scr {
-    padding: 10rem 0;
-  }
-
  .description-content {
-    padding: 17.7rem 0;
-    width: 28.8rem;
-  }
-
-  .description-content h2 {
-           /******TABLET******/
-    font-size: 4.8rem;
+    width: 32rem;
   }
 
   .description-content p {
@@ -298,5 +311,14 @@ footer ul li a{
   }
 }
 
-/****************DESKTOP****************/
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1285px) {
+  .grid2 {
+    grid-template-columns: 5fr 3fr;  /******DESKTOP******/
+    padding: 3em 0;
+  }
+
+  .description-content {
+    margin: auto;
+    width: 28.8rem;
+   }
+}

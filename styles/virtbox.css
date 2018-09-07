@@ -44,7 +44,7 @@ section {
   padding-top: 2.2rem;
 }
 
-.probsol, .small, .competitors, .personas, .takeaway1, .userStories, .visualDesign, .styleGuide, .v2, .v3, .finish, .added, .slideShow {
+.probsol, .competitors, .personas, .takeaway1, .userStories, .visualDesign, .styleGuide, .v2, .v3, .finish, .added, .slideShow {
  padding: 0;
 }
 
@@ -118,7 +118,7 @@ hr {
 nav {
   display: inline-block;      /******MOBILE******/
   font-family: Raleway;
-  padding: 1rem;
+  padding: 1rem 0;
 }
 
 nav a {
@@ -309,20 +309,21 @@ nav ul li a:hover, .side-nav a:hover {
   margin: auto auto auto 0;
 }
 
-.probsol1, .probsol1-g2, .probsol2, .probsol2-g2, .probsol3, .probsol3-g2 {          /******MOBILE******/
+.probsol1, .probsol2, .probsol3{          /******MOBILE******/
   display: grid;
   grid-gap: 2rem;
-  grid-template-columns: 1fr 9fr;
+  grid-template-columns: 1fr 11fr;
   list-style-type: none;
   text-align: left;
 }
 
-.probsol1-g2, .probsol2-g2, .probsol3-g2 {
-  margin-top: 1rem;
-}
 
 .probsol2 {
   margin-top: 4rem;
+}
+
+.small {
+  padding-bottom: 0;
 }
 
 .lg {
@@ -342,7 +343,6 @@ nav ul li a:hover, .side-nav a:hover {
 }
 
 .sad, .happy {
-  display: inline-block;
   height: 3.6rem;
   margin-bottom: .3rem;
   vertical-align: middle;     /******MOBILE******/
@@ -434,6 +434,10 @@ nav ul li a:hover, .side-nav a:hover {
   list-style-type: disc;
 }
 
+.survey .bold {
+  list-style-type: none;
+}
+
 
 /******COMPETITORS******/
 .analysis {
@@ -520,6 +524,7 @@ nav ul li a:hover, .side-nav a:hover {
 }
 
 .takeaway2 {
+  line-height: .7cm;
   margin: 2.2rem auto;
   padding: 0;
   text-align: center;
@@ -592,8 +597,8 @@ nav ul li a:hover, .side-nav a:hover {
   margin-top: 2.2rem;
 }
 
-.slides h6 {
-  margin: 2.2rem 0;
+.slides .bold {
+  margin: 2.2rem 0;           /******MOBILE******/
   text-align: center;
 }
 
@@ -603,7 +608,7 @@ nav ul li a:hover, .side-nav a:hover {
   width: 60%;
 }
 
-.w3-content {
+.w3-content {           /******MOBILE******/
   display: none;
 }
 
@@ -697,7 +702,7 @@ footer ul li a{
     padding: 3rem;
   }
 
-  .probsol1, .probsol1-g2, .probsol2, .probsol2-g2, .probsol3, .probsol3-g2 {
+  .probsol1, .probsol2, .probsol3{
     grid-gap: 0;
   }
 
@@ -1015,12 +1020,12 @@ nav ul li {
     padding-bottom: 2.2rem;
   }
 
-  .slideShow {
-    display: none;
+  .slideShow{
+    display: none;  /******TABLET******/
   }
 
   .w3-content {
-    display: block;
+    display: block; /******TABLET******/
   }
 
   .testings {
@@ -1129,20 +1134,13 @@ nav ul li {
   .probsol {
     display: grid;               /******DESKTOP******/
     grid-area: probsol;
-    grid-gap 1rem;
+    grid-gap: 1rem;
     grid-template-columns: 1fr 1fr;
   }
 
-  .probsol1, .probsol1-g2, .probsol2, .probsol2-g2, .probsol3, .probsol3-g2 {          /******MOBILE******/
+  .probsol1, .probsol2, .probsol3 {          /******DESKTOP******/
     grid-gap: 1rem;
-  }
 
-  .probsol2 {
-    margin: 0 auto auto 1rem;
-  }
-
-  .probsol2-g2 {
-    margin-left: 1rem;
   }
 
   .small {
@@ -1150,7 +1148,7 @@ nav ul li {
   }
 
   .lg {
-    display: inline-block;
+    display: grid;
   }
 
   .scr2 {

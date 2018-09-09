@@ -66,13 +66,13 @@ h2, h3, h4 {
 h2 {
   color: #2F80ED;
   font-size: 2.6rem;            /******MOBILE******/
-  margin-bottom: 2.2rem;
+  margin-bottom: 1.5rem;
 }
 
 h3 {
   color: #2D9CDB;
   font-size: 2.4rem;
-  margin-bottom: 2.2rem;
+  margin-bottom: 1rem;
 }
 
 h4 {
@@ -231,7 +231,7 @@ nav ul li a:hover, .side-nav a:hover {
   font-size: 2.8rem;
   font-weight: 900;
   margin: 0 auto;
-  padding-top: 3rem;
+  width: 80%;
 }
 
 .summary {
@@ -299,9 +299,13 @@ nav ul li a:hover, .side-nav a:hover {
   margin: auto 0;
 }
 
-.solscr {
+.solscr, .solscr2 {
   margin: 1rem auto;
   width: 100%;
+}
+
+.solscr2 {
+  margin: 7rem 0;
 }
 
 .probsol ul li {
@@ -411,7 +415,7 @@ nav ul li a:hover, .side-nav a:hover {
 .data {
   background-color: #D9DFFE;        /******MOBILE******/
   display: grid;
-  grid-gap: 1rem;
+  grid-gap: 2rem;
   grid-template-columns: 1fr 1fr;
   margin: 2.2rem auto;
   padding: 3rem 3rem 0 3rem;
@@ -694,6 +698,11 @@ footer ul li a{
 }
 
 @media(min-width: 450px){
+
+  .right-content {
+    width: 60%;
+  }
+
   .phases {
     width: 70%;
   }
@@ -702,8 +711,8 @@ footer ul li a{
     padding: 3rem;
   }
 
-  .probsol1, .probsol2, .probsol3{
-    grid-gap: 0;
+  .probsol1 ul li, .probsol2 ul li, .probsol3 ul li{
+    line-height: .2cm;
   }
 
   .col ul {
@@ -712,6 +721,10 @@ footer ul li a{
 }
 
 @media(min-width: 555px){
+  .right-content {
+    width: 45%;
+  }
+
   .data {
     padding-bottom: 0;
   }
@@ -810,7 +823,7 @@ footer ul li a{
 
   h3 {
     font-size: 2.6rem;    /******TABLET******/
-    margin-bottom: 4.4rem;
+    margin-bottom: 1.5rem;
   }
 
   h4 {
@@ -831,19 +844,8 @@ nav ul li {
 
 
   /******HERO******/
-  .grid1 {
-    display: grid;            /******TABLET******/
-    grid-template-columns: 2fr 1fr;
-    padding-top: 8.5rem;
-  }
-
-  .right-content {            /******TABLET******/
-    font-size: 4rem;
-    margin: 0 auto;
-  }
-
-  .summary {
-    line-height: 1.7cm
+  .right-content {
+    width: 35%;
   }
 
   .button {
@@ -893,8 +895,9 @@ nav ul li {
   .discRe {
     grid-area: discRe;
   }
+
   .data ul li {
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
   }
 
   .last {
@@ -1118,6 +1121,22 @@ nav ul li {
  }
 
 @media screen and (min-width: 900px) {
+  .grid1 {
+    display: grid;            /******TABLET******/
+    grid-gap: 2rem;
+    grid-template-columns: 2fr 1fr;
+    padding-top: 8.5rem;
+  }
+
+  .right-content {            /******TABLET******/
+    font-size: 4rem;
+    width: 100%;
+  }
+
+  .summary {
+    line-height: 1.7cm;
+  }
+
   .col {
     width: 50%;
   }
@@ -1134,13 +1153,8 @@ nav ul li {
   .probsol {
     display: grid;               /******DESKTOP******/
     grid-area: probsol;
-    grid-gap: 1rem;
+    grid-gap: 2rem;
     grid-template-columns: 1fr 1fr;
-  }
-
-  .probsol1, .probsol2, .probsol3 {          /******DESKTOP******/
-    grid-gap: 1rem;
-
   }
 
   .small {

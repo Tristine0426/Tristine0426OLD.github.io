@@ -108,18 +108,13 @@ p {
 
 /******General info******/
 .intro {
-  background: linear-gradient(rgba(237, 47, 128, 0.8), rgba(47, 128, 237, 0.8)), url(../images/avatar.jpg) no-repeat;
+  background: linear-gradient(rgba(237, 47, 128, 0.5), rgba(47, 128, 237, 0.9)), url(../imagesUpdated/avatar.jpg) no-repeat;
   background-size: cover;
   color: #fff;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%); /******MOBILE******/
   clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
+  padding: 5rem 0;
 }
-
-.grid {
-  border: 1px solid black;
-  padding: 10rem 0;
-}
-
 
 .grid, .grid1 li{
   display: grid;
@@ -129,19 +124,31 @@ p {
   width: 90%;
 }
 
-.grid h3 {
-  margin: 2.2rem auto;          /******MOBILE******/
+.grid {
+  text-align: left;
 }
 
 h1 {
   font-family: Montserrat;
   font-size: 2.4rem;
   font-weight: 900;             /******MOBILE******/
+  padding-bottom: 1rem;
+}
+
+hr {
+  border: .1rem solid white;    /******MOBILE******/
+  margin-left: 0;
+  width: 22rem;
 }
 
 h3 {
   font-weight: 600;             /******MOBILE******/
   font-size: 1.7rem;
+}
+
+.whoIAm p {
+  line-height: .5cm;
+  margin-top: 2.2rem;
 }
 
 /******BODY TEXT STORY******/
@@ -196,8 +203,25 @@ footer ul li a{
   font-size: 1.3rem;    /******MOBILE******/
 }
 
+@media screen and (min-width: 510px) {
+  .whoIAm p {
+    width: 45rem;
+  }
+}
+
+@media screen and (min-width: 510px) {
+  .intro {
+    padding-top: 15rem;
+  }
+}
+
 /****************TABLET SIZE****************/
 @media screen and (min-width: 768px) {
+
+  .intro {
+    padding-top: 40rem;
+  }
+
   p {
     font-size: 1.8rem;
   }
@@ -211,40 +235,29 @@ footer ul li a{
   }
 
   /******General info******/
-  .intro {
-    padding: 5rem 0;
+  .grid {
+    height: 80%;
+    width: 80%;
   }
-
-  .grid1 {
-  grid-template-columns: 1fr;
-  margin: 5rem auto 8rem auto;
-  width: 50%;                         /******TABLET******/
-}
-
-.avatar img {
-  grid-area: avatar;
-  height: 25rem;
-  width: 25rem;             /******TABLET******/
-}
-
-.grid {
-  border: 1px solid black;
-  height: 80%;
-  padding-bottom: 4rem;
-  width: 80%;
-}
-
-.grid li {
-  padding-top: 6rem;
-  width: 40%;
-}
 
   h1 {
   font-size: 3.6rem;
   }
 
+  hr {
+    width: 33rem;
+  }
+
   h3 {
-  font-size: 2.4rem;
+  font-size: 2.1rem;
+
+  }
+
+  /******JOURNEY STORY******/
+  .grid1 {
+    grid-template-columns: 1fr;
+    margin: 5rem auto 8rem auto;
+    width: 50%;                         /******TABLET******/
   }
 
   /******FOOTER******/
@@ -261,10 +274,17 @@ footer ul li a{
 /****************DESKTOP****************/
 @media screen and (min-width: 1200px) {
   /******GENERAL INFO******/
+  .whoIAm p {
+    padding-bottom: 2.8rem
+  }
 
   .grid1 {
     margin-bottom: 10rem;
-    width: 45%;                         /******DESKTOP******/
 }
 
+}
+
+@media screen and (min-width: 2200px) {
+  .whoIAm {
+    }
 }

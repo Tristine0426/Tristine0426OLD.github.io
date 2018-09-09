@@ -17,7 +17,6 @@ nav {
   font-family: Raleway;
   margin: 0 auto;
   padding: 1rem 0;
-
 }
 
 nav a {
@@ -145,7 +144,7 @@ h3 {
 }
 
 .down-arrow {
-  margin: 6rem 0 2rem 0;    /******MOBILE******/
+  margin: 12rem 0 2rem 0;    /******MOBILE******/
   text-align: center;
 }
 
@@ -179,12 +178,8 @@ width: 100%;
   width: 22rem;
 }
 
-.description-content h2 {
-  font-size: 4rem;   /******MOBILE******/
-}
-
 .description-content p {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   margin-bottom: 4.2rem;
 }
 
@@ -260,11 +255,12 @@ footer ul li a{
   }
 
   h1 {
-    font-size: 6.6rem;    /******TABLET******/
+    font-size: 6.5rem;    /******TABLET******/
+    letter-spacing: .5rem;
   }
 
   .introduction {
-    margin: 12rem auto 0 10rem;
+    margin: 12rem auto 0 3rem;
   }
 
   h3 {
@@ -273,7 +269,7 @@ footer ul li a{
   }
 
   .down-arrow {
-    margin: 10rem 0 2rem 0;   /******TABLET******/
+    margin: 22rem 0 2rem 0;   /******TABLET******/
   }
 
   /******FOR ALL PROJECTS*****/

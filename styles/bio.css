@@ -147,13 +147,12 @@ h3 {
 }
 
 .whoIAm p {
-  line-height: .5cm;
   margin-top: 2.2rem;
 }
 
 /******BODY TEXT STORY******/
 .grid1 {
-    margin-bottom: 8rem;
+    margin-bottom: 15rem;
 }
 
 .grid1 li {                 /******MOBILE******/
@@ -256,8 +255,13 @@ footer ul li a{
   /******JOURNEY STORY******/
   .grid1 {
     grid-template-columns: 1fr;
-    margin: 5rem auto 8rem auto;
+    margin: 5rem auto 20rem auto;
     width: 50%;                         /******TABLET******/
+  }
+
+  .grid1 img {
+    margin: 0 auto;
+    width: 70%;
   }
 
   /******FOOTER******/
@@ -277,10 +281,6 @@ footer ul li a{
   .whoIAm p {
     padding-bottom: 2.8rem
   }
-
-  .grid1 {
-    margin-bottom: 10rem;
-}
 
 }
 
